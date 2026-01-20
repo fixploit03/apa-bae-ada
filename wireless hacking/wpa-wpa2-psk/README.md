@@ -8,7 +8,7 @@ sudo airmon-ng start [interface]
 ```
 
 Keterangan:
-- `[interface]` : Interface yang mau lu pake, contoh: `wlan0`
+- `[interface]` : Interface yang mau lu pake, contoh: `wlan0`.
 
 #### 2. Scan Wi-Fi
 
