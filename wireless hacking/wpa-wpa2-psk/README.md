@@ -1,5 +1,20 @@
 # Hack Wi-Fi WPA/WPA2-PSK
 
+## Persyaratan
+- OS Linux
+- Adapter Wi-Fi (support mode monitor)
+- Aircrack-NG suite
+- Wordlist
+
+## Instal Tool
+
+```
+sudo apt-get update
+sudo apt-get install aircrack-ng
+```
+
+## Langkah-Langkah
+
 #### 1. Aktifin Mode Monitor
 
 ```
