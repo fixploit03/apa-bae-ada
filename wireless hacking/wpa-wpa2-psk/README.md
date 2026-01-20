@@ -193,3 +193,10 @@ sudo iw dev [interface] set type managed
 sudo ip l set [interface] up
 sudo systemctl restart NetworkManager
 ```
+
+## Troubelshoot
+- Kalo pas scannig Wi-Fi kaga ada outputnya, coba lu lepas adapter Wi-Fi nya dari VM, terus lu colok lagi.
+- Kalo pas capture handshake lu lama dapet handshake nya, itu ada dua kemungkinan:
+  1. Sinyal/Power AP target lemah (minimal: `-35` sampe `-60` dBm)
+  2. Kaga ada client yang reconnect
+- Kalo output `aircrack-ng` outputnya `KEY NOT FOUND`, itu artinya password Wi-Fi target kaga ada di wordlist lu. Lu harus pake wordlist yang mengandung password Wi-Fi target.
