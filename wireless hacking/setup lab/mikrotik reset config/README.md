@@ -1,4 +1,4 @@
-# Reset Konfigurasi Mikrotik
+# Reset Konfigurasi (Mikrotik)
 
 ## Langkah-Langkah
 
