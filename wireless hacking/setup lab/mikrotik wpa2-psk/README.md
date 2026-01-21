@@ -1,4 +1,4 @@
-# Konfigurasi Mikrotik Wi-Fi WPA2-PSK
+# Konfigurasi Wi-Fi WPA2-PSK (Mikrotik)
 
 > [!NOTE]
 > Konfigurasi ini kaga pake koneksi internet.
