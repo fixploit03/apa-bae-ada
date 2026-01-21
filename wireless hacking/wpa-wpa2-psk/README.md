@@ -5,6 +5,7 @@
 - Adapter Wi-Fi (support mode monitor)
 - Aircrack-NG suite
 - Wordlist
+- Koneksi internet
 
 ## Instal Tool
 
