@@ -14,7 +14,7 @@
   <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/setup%20lab/mikrotik%20reset%20config/img/4.png" />
   <h4>6. Klik OK.</h4>
   <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/setup%20lab/mikrotik%20reset%20config/img/5.png" />
-  <h4>7. Klik Close</h4>
+  <h4>7. Klik Close.</h4>
   <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/setup%20lab/mikrotik%20reset%20config/img/6.png" />
   <h4>8. Login pake MAC address.</h4>
   <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/setup%20lab/mikrotik%20reset%20config/img/7.png" />
