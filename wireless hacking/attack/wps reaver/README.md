@@ -86,6 +86,9 @@ Cara ngakalinnya, tunggu dia sampe kaga `Yes` lagi.
 
 Kalo serangan pertama gagal, coba pake serangan ini:
 
+> [!NOTE]
+> Kaga semua device rentan sama serangan ini. PixieDust Attack biasanya cuma kepake pada device yang make chipset lama, kaya `Ralink` atau `Broadcom`.
+
 ```
 sudo reaver -i [interface] -e [essid] -b [bssid] -c [channel] -vv -K
 ```
