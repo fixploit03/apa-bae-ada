@@ -14,5 +14,5 @@ ada apa bae
   - [Prepaation](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/preparation)
     - [List Adapter Wi-Fi untuk Pentest](https://github.com/v1s1t0r1sh3r3/airgeddon/wiki/Cards%20and%20Chipsets)
     - [Setup Adapter Wi-Fi](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/preparation/setup%20adapter%20wifi)
-  - [Cek Mode yang Didukung Adapter Wi-Fi](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/cek%20mode%20monitor)
+    - [Cek Mode yang Didukung Adapter Wi-Fi](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/preparation/cek%20mode%20monitor)
   - [Hack Wi-Fi WPA/WPA2-PSK (Aircrack-NG)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/aircrack%20wpa2-psk) 
