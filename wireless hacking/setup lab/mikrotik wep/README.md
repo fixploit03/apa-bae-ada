@@ -5,6 +5,7 @@
 - OS Windows/Linux
 - Mikrotik RB941-2nD
 - Aplikasi WinBox (versi 4.0beta30)
+- Kabel LAN
 
 ## Langkah-Langkah
 
