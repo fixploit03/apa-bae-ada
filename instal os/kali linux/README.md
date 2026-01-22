@@ -1,6 +1,7 @@
 # Instal Kali Linux 2025.4 di VirtualBox
 
 ## Bahan-Bahan
+- PC/Laptop
 - OS Windows/Linux
 - Aplikasi VirtualBox
 - File ISO Kali Linux Kali Linux 2025.4
