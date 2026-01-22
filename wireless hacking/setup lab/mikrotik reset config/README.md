@@ -1,5 +1,12 @@
 # Reset Konfigurasi (Mikrotik)
 
+## Bahan-Bahan
+- PC/Laptop
+- OS Windows/Linux
+- Mikrotik RB941-2nD
+- Aplikasi WinBox (versi 4.0beta30)
+- Kabel LAN
+
 ## Langkah-Langkah
 
 <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/setup%20lab/mikrotik%20reset%20config/img/1.png" />
