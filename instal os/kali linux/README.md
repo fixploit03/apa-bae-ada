@@ -43,10 +43,7 @@
   <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/instal%20os/kali%20linux/img/32.png">
   <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/instal%20os/kali%20linux/img/33.png">
   <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/instal%20os/kali%20linux/img/34.png">
-  <h4 align="left">37. Teken Enter.</h4>
   <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/instal%20os/kali%20linux/img/35.png">
-  <h4 align="left">38. Masukkin username sama password yang tadi lu bikin.</h4>
   <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/instal%20os/kali%20linux/img/36.png">
-  <h4 align="left">39. Kelar deh.</h4>
   <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/instal%20os/kali%20linux/img/37.png">
 </div>
