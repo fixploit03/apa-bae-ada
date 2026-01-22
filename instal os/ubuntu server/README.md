@@ -1,5 +1,11 @@
 # Instal Ubuntu Server 24.04.3 di VirtualBox
 
+## Bahan-Bahan
+- OS Windows/Linux
+- Aplikasi VirtualBox
+- File ISO Ubuntu Server 24.04.3
+- Koneksi internet
+
 ## Langkah-Langkah
 
 <div align="center">
