@@ -2,7 +2,9 @@
 
 ada apa bae
 
-- [Instal Kali Linux di VirtualBox](https://github.com/fixploit03/apa-bae-ada/tree/main/instal%20os/kali%20linux) 
+- [Instal OS](https://github.com/fixploit03/apa-bae-ada/tree/main/instal%20os)
+  - [Kali Linux 2025.4](https://github.com/fixploit03/apa-bae-ada/tree/main/instal%20os/kali%20linux)
+  - [Ubuntu Server 24.04.3](https://github.com/fixploit03/apa-bae-ada/tree/main/instal%20os/ubuntu%20server)
 - [Wireless Hacking](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking)
   - [Setup LAB](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab)
     - [Reset Konfigurasi (Mikrotik)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab/mikrotik%20reset%20config)
