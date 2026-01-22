@@ -4,7 +4,7 @@
 - PC/Laptop
 - OS Windows/Linux
 - Aplikasi VirtualBox
-- Guest OS
+- Guest OS (Kali Linux)
 - Adapter Wi-Fi
 
 ## Langkah-Langkah
