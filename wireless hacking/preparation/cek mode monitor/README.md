@@ -1,20 +1,5 @@
 # Cek Mode yang Didukung Adapter Wi-Fi
 
-## Bahan-Bahan
-- PC/Laptop
-- OS Linux
-- Adapter Wi-Fi 
-- Aircrack-NG suite
-- iw
-- Koneksi internet
-
-## Instal Tools
-
-```
-sudo apt-get update
-sudo apt-get install iw aircrack-ng
-```
-
 ## Langkah-Langkah
 
 #### 1. Cek Interface
