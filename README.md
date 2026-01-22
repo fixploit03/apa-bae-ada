@@ -11,7 +11,7 @@ ada apa bae
     - [Konfigurasi Wi-Fi WEP (Mikrotik)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab/mikrotik%20wep)
     - [Konfigurasi Wi-Fi WPA2-PSK (Mikrotik)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab/mikrotik%20wpa2-psk)
     - [Konfigurasi Wi-Fi WPS (Huawei HG532e)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab/huawei%20gh532e%20wps)
-  - [preparation](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/preparation)
+  - [Preparation](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/preparation)
     - [List Adapter Wi-Fi untuk Pentest](https://github.com/v1s1t0r1sh3r3/airgeddon/wiki/Cards%20and%20Chipsets)
     - [Setup Adapter Wi-Fi](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/preparation/setup%20adapter%20wifi)
     - [Cek Mode yang Didukung Adapter Wi-Fi](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/preparation/cek%20mode%20monitor)
