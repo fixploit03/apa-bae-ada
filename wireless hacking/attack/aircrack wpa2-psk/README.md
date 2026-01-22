@@ -1,6 +1,6 @@
 # Hack Wi-Fi WPA/WPA2-PSK (Aircrack-NG)
 
-## Persyaratan
+## Bahan-Bahan
 - PC/Laptop
 - OS Linux
 - Adapter Wi-Fi (support mode monitor)
