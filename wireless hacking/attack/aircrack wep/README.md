@@ -1,6 +1,6 @@
 # Hack Wi-Fi WEP (Aircrack-NG)
 
-## Persyaratan
+## Bahan-Bahan
 - PC/Laptop
 - OS Linux
 - Adapter Wi-Fi (support mode monitor)
