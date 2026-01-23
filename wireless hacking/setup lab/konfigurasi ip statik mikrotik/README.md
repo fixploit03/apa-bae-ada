@@ -1,4 +1,4 @@
-# Konfigurasi IP Statik Mikrotik
+# Konfigurasi IP Statik (Mikrotik)
 
 Bahan-Bahan
 - PC/Laptop
