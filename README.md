@@ -24,7 +24,7 @@ ada apa bae
     - [Hack Wi-Fi WPA/WPA2-PSK PMKID Attack (Hashcat)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/attack/pmkid%20hashcat)
     - [Hack Wi-Fi WPS (Reaver)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/attack/wps%20reaver)
     - [Hack Wi-Fi WPS (PixieWPS)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/attack/wps%20pixiewps)
-    - [HacK Wi-Fi Secara Otomatis (Wifite)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/attack/wifite)
+    - [Hack Wi-Fi Secara Otomatis (Wifite)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/attack/wifite)
     
 
 > Repositori ini masih gw kembangin, jadi enjoy aja 🚧
