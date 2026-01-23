@@ -1,6 +1,6 @@
 # Konfigurasi IP Statik (Mikrotik)
 
-Bahan-Bahan
+## Bahan-Bahan
 - PC/Laptop
 - OS Windows/Linux
 - Mikrotik RB941-2nD
