@@ -10,7 +10,7 @@ Wireless hacking adalah kegiatan buat ngetes, nganalisis sama ngeksploitasi cela
 
 ## Apa Aja yang Dianalisis?
 
-Wireless hacking fokus ke protokol [IEEE 802.11](https://en.wikipedia.org/wiki/IEEE_802.11), yang dicek contohnya:
+Wireless hacking fokus ke protokol [IEEE 802.11](https://en.wikipedia.org/wiki/IEEE_802.11), yang dianalisis contohnya:
 - Access Point (AP)
 - Client/Station (device yang konek sama AP)
 - Handshake
