@@ -33,15 +33,15 @@ sudo airodump-ng [interface]
 Output:
 
 ```
- CH 11 ][ Elapsed: 0 s ][ 2026-01-23 13:32                                                                                                                                                                                                 
+CH 11 ][ Elapsed: 0 s ][ 2026-01-23 13:32                                                                                                                                                                                                 
                                                                                                                                                                                                                                            
- BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID                                                                                                                                                       
+BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID                                                                                                                                                       
                                                                                                                                                                                                                                            
- 84:16:F9:FE:64:68  -26   0       15        0    0  11  130   WPA2 CCMP   PSK  LATIHAN                                                                                                                                                     
+84:16:F9:FE:64:68  -26   0       15        0    0  11  130   WPA2 CCMP   PSK  LATIHAN                                                                                                                                                     
                                                                                                                                                                                                                                            
- BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes                                                                                                                                                         
+BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes                                                                                                                                                         
                                                                                                                                                                                                                                            
- 84:16:F9:FE:64:68  4A:F2:3B:A2:12:29  -30    0 - 1      0        5
+84:16:F9:FE:64:68  4A:F2:3B:A2:12:29  -30    0 - 1      0        5
 ```
 
 Catet:
@@ -73,13 +73,13 @@ Serangan ini dipake buat mutusin koneksi client dari AP target. Pas client keput
 ```
 CH 11 ][ Elapsed: 6 s ][ 2026-01-20 13:03 ][ WPA handshake: 84:16:F9:FE:64:68                                 
                                                                                                                
- BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID                           
+BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID                           
                                                                                                                
- 84:16:F9:FE:64:68  -38 100       63       25    8  11  130   WPA2 CCMP   PSK  LATIHAN                         
+84:16:F9:FE:64:68  -38 100       63       25    8  11  130   WPA2 CCMP   PSK  LATIHAN                         
                                                                                                                
- BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes                             
+BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes                             
                                                                                                                
- 84:16:F9:FE:64:68  4A:F2:3B:A2:12:29  -33    1e- 1e     0       14  EAPOL
+84:16:F9:FE:64:68  4A:F2:3B:A2:12:29  -33    1e- 1e     0       14  EAPOL
 ```
 
 Tungguin di kolom pojok kanan atas sampai nongol `WPA handshake: [bssid]`. Kalo udah nongol teken `CTRL+C`.
