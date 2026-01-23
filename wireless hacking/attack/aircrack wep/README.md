@@ -43,6 +43,16 @@ CH 11 ][ Elapsed: 0 s ][ 2026-01-23 12:52
  84:16:F9:FE:64:68  EA:F0:19:3D:F6:4B  -26   54e- 1e   882       17
 ```
 
+Catet:
+- `ESSID`: Nama Wi-Fi
+- `BSSID`: MAC address AP
+- `CH`: Channel AP
+- `STATION`: MAC address client
+- `PWR`: Kekuatan sinyal AP dalam satuan decibel-milliwatt (`dBm`)
+
+> [!NOTE]
+> Pastiin `PWR` AP target kaga di atas `-60` powernya. Kalo di atas, berarti sinyal AP target lemah, jadi proses capture paket bakal susah, IV yang didapet bakalan dikit dapetnya, sama serangan bakal jadi lama prosesnya atau malahan gagal.
+
 #### 3. Capture IVs
 
 ```
@@ -63,7 +73,7 @@ Serangan ini dipake buat nipu AP target supaya nganggep attacker sebagai client 
 sudo aireplay-ng -3 -b [bssid] -h [mac_attacker] [interface]
 ```
 
-Serangan ini dipake buat nangkep satu paket ARP yang valid, terus paket itu di-replay (diputer-puter) ke AP target. Efeknya, AP bakal terus-terusan ngebales dengan paket baru yang terenkripsi, sehingga jumlah IVs naik cepet banget dan proses crack WEP jadi jauh lebih cepet.
+Serangan ini dipake buat nangkep satu paket ARP yang valid, terus paket itu di-replay (diputer-puter) ke AP target. Efeknya, AP bakal terus-terusan ngebales dengan paket baru yang terenkripsi, sehingga jumlah IVs naik cepet banget dan proses crack kunci WEP jadi jauh lebih cepet.
 
 #### 6. Jalanin Serangan Deauth
 
@@ -71,7 +81,7 @@ Serangan ini dipake buat nangkep satu paket ARP yang valid, terus paket itu di-r
 sudo aireplay-ng -0 0 -a [bssid] -c [mac_client] [interface]
 ```
 
-Serangan ini dipake buat mutusin koneksi client sama AP target. Pas client keputus, dia bakal nyoba konek ulang, dan di momen itu bakal muncul traffic baru (kaya ARP request atau handshake) yang bisa dipake buat serangan lanjutan.
+Serangan ini dipake buat mutusin koneksi client sama AP target. Pas client keputus, dia bakal nyoba konek ulang, dan di momen itu bakal muncul traffic baru (kaya ARP request) yang bisa ditangkep dan dipake buat crack kunci WEP.
 
 #### 7. Pantau IVs
 
@@ -90,7 +100,7 @@ CH 11 ][ Elapsed: 2 mins ][ 2026-01-23 03:31
 
 Tungguin di kolom `#Data` nya, sampe dapet sekitar `40000` sampe `80000` an. Kalo udah dapet teken `CTRL+C` di terminal capture IVs sama serangan ARP request replay.
 
-#### 8. Crack WEP
+#### 8. Crack Kunci WEP
 
 ```
 aircrack-ng -a 1 -e [essid] -b [bssid] -l [output] [file_ivs] 
