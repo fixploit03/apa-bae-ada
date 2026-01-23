@@ -27,4 +27,4 @@ ada apa bae
     - [HacK Wi-Fi Secara Otomatis (Wifite)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/attack/wifite)
     
 
-> Repositori ini masih dalam tahap pengembangan 🚧
+> Repositori ini masih gw kembangin, jadi enjoy aja 🚧
