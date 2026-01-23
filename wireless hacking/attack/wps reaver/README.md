@@ -39,11 +39,20 @@ BSSID               Ch  dBm  WPS  Lck  Vendor    ESSID
 9C:C1:72:6B:DF:88    9  -17  2.0  No   RalinkTe  LATIHAN
 ```
 
-Pastiin status `Lck` nya kaga `Yes`, kalo `Yes` itu artinya WPS target ke lock. Kalo ke lock kaga bisa diserang.
+Catet:
+- `ESSID`: Nama Wi-Fi
+- `BSSID`: MAC address AP
+- `Ch`: Channel AP
+- `dBm`: Kekuatan sinyal AP dalam satuan decibel-milliwatt (dBm)
+- `Lck`: Status WPS
+- `Vendor`: Nama vendor AP
+
+> [!NOTE]
+> Pastiin status `Lck` nya kaga `Yes`, kalo `Yes` itu artinya WPS target ke lock. Kalo ke lock kaga bisa diserang.
 
 #### 3. Jalanin Serangan
 
-Reaver punya macem-macem jenis serangan:
+Reaver sendiri punya macem-macem jenis serangan:
 1. PIN Brute Force Attack
 2. PixieDust Attack (via PixieWPS)
 3. Known PIN Attack
@@ -70,7 +79,7 @@ Kalo pas lagi nyerang muncul output kaya gini:
 [!] WARNING: Detected AP rate limiting, waiting 60 seconds before re-checking
 ```
 
-Artinya AP target mendukung fitur rate limiting, terus WPS target yang tadinya status `Lck` nya `No` jadi `Yes`.
+Artinya AP target mendukung fitur rate limiting (percobaan bates login), terus WPS target yang tadinya status `Lck` nya `No` jadi `Yes`.
 
 Coba jalanin `wash` buat mastiin:
 
@@ -80,14 +89,14 @@ BSSID               Ch  dBm  WPS  Lck  Vendor    ESSID
 9C:C1:72:6B:DF:88    9  -17  2.0  Yes  RalinkTe  LATIHAN
 ```
 
-Cara ngakalinnya, tunggu dia sampe kaga `Yes` lagi.
+Cara ngakalinnya, tungguin sampe status `Lck` balik jadi `No` lagi.
 
 #### 2. PixieDust Attack
 
 Kalo serangan pertama gagal, coba pake serangan ini:
 
 > [!NOTE]
-> Kaga semua device rentan sama serangan ini. PixieDust Attack biasanya cuma kepake pada device yang make chipset lama, kaya `Ralink` atau `Broadcom`.
+> Kaga semua device rentan sama serangan ini. Serangan ini biasanya cuma kepake pada device yang make chipset lama, kaya modelan `Ralink` atau `Broadcom`.
 
 ```
 sudo reaver -i [interface] -e [essid] -b [bssid] -c [channel] -vv -K
