@@ -81,7 +81,7 @@ Serangan ini dipake buat nangkep satu paket ARP yang valid, terus paket itu di-r
 sudo aireplay-ng -0 0 -a [bssid] -c [mac_client] [interface]
 ```
 
-Serangan ini dipake buat mutusin koneksi client sama AP target. Pas client keputus, dia bakal nyoba konek ulang, dan di momen itu bakal muncul traffic baru (kaya ARP request) yang bisa ditangkep dan dipake buat crack kunci WEP.
+Serangan ini dipake buat mutusin koneksi client dari AP target. Pas client keputus, dia bakal nyoba konek ulang, dan di momen itu bakal muncul traffic baru (kaya ARP request) yang bisa ditangkep dan dipake buat crack kunci WEP.
 
 #### 7. Pantau IVs
 
