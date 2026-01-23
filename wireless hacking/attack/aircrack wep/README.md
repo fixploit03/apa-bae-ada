@@ -29,6 +29,20 @@ sudo airmon-ng start [interface]
 sudo airodump-ng -t wep [interface]
 ```
 
+Output:
+
+```
+CH 11 ][ Elapsed: 0 s ][ 2026-01-23 12:52                                                                                                                                                                                                 
+                                                                                                                                                                                                                                           
+ BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID                                                                                                                                                       
+                                                                                                                                                                                                                                           
+ 84:16:F9:FE:64:68  -29   0       13       10    0  11   54e. WEP  WEP         LATIHAN                                                                                                                                                     
+                                                                                                                                                                                                                                           
+ BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes                                                                                                                                                         
+                                                                                                                                                                                                                                           
+ 84:16:F9:FE:64:68  EA:F0:19:3D:F6:4B  -26   54e- 1e   882       17
+```
+
 #### 3. Capture IVs
 
 ```
