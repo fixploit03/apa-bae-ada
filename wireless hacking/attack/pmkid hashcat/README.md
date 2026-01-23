@@ -1,4 +1,4 @@
-# Hack Wi-Fi WPA/WPA2-PSK (PMKID)
+# Hack Wi-Fi WPA/WPA2-PSK PMKID Attack (Hashcat)
 
 ## Bahan-Bahan
 - PC/Laptop
