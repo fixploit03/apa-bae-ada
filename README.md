@@ -7,7 +7,7 @@ ada apa bae
   - [Ubuntu Server 24.04.3](https://github.com/fixploit03/apa-bae-ada/tree/main/instal%20os/ubuntu%20server)
 - [Wireless Hacking](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking)
   - [Fundamental](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental)
-    - [Apa itu Wireless Hacking?](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/apa%20itu%20wireless%20hacking)
+    - [Apa Itu Wireless Hacking?](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/apa%20itu%20wireless%20hacking)
   - [Setup LAB](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab)
     - [Reset Konfigurasi (Mikrotik)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab/mikrotik%20reset%20config)
     - [Konfigurasi IP Statik (Mikrotik)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab/konfigurasi%20ip%20statik%20mikrotik)
