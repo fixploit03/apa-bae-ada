@@ -8,7 +8,7 @@ ada apa bae
 - [Wireless Hacking](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking)
   - [Setup LAB](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab)
     - [Reset Konfigurasi (Mikrotik)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab/mikrotik%20reset%20config)
-    - [Konfigurasi IP Statik Mikrotik](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab/konfigurasi%20ip%20statik%20mikrotik)
+    - [Konfigurasi IP Statik (Mikrotik)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab/konfigurasi%20ip%20statik%20mikrotik)
     - [Konfigurasi Wi-Fi WEP (Mikrotik)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab/mikrotik%20wep)
     - [Konfigurasi Wi-Fi WPA2-PSK (Mikrotik)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab/mikrotik%20wpa2-psk)
     - [Konfigurasi Wi-Fi WPS (Huawei HG532e)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab/huawei%20gh532e%20wps)
