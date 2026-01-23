@@ -34,13 +34,13 @@ Output:
 ```
 CH 11 ][ Elapsed: 0 s ][ 2026-01-23 12:52                                                                                                                                                                                                 
                                                                                                                                                                                                                                            
- BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID                                                                                                                                                       
+BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID                                                                                                                                                       
                                                                                                                                                                                                                                            
- 84:16:F9:FE:64:68  -29   0       13       10    0  11   54e. WEP  WEP         LATIHAN                                                                                                                                                     
+84:16:F9:FE:64:68  -29   0       13       10    0  11   54e. WEP  WEP         LATIHAN                                                                                                                                                     
                                                                                                                                                                                                                                            
- BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes                                                                                                                                                         
+BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes                                                                                                                                                         
                                                                                                                                                                                                                                            
- 84:16:F9:FE:64:68  EA:F0:19:3D:F6:4B  -26   54e- 1e   882       17
+84:16:F9:FE:64:68  EA:F0:19:3D:F6:4B  -26   54e- 1e   882       17
 ```
 
 Catet:
@@ -88,14 +88,14 @@ Serangan ini dipake buat mutusin koneksi client dari AP target. Pas client keput
 ```
 CH 11 ][ Elapsed: 2 mins ][ 2026-01-23 03:31                                                                                                                
                                                                                                                                                              
- BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID                                                                         
+BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID                                                                         
                                                                                                                                                              
- 84:16:F9:FE:64:68  -29 100     1554    81641  928  11   54e. WEP  WEP    OPN  LATIHAN                                                                       
+84:16:F9:FE:64:68  -29 100     1554    81641  928  11   54e. WEP  WEP    OPN  LATIHAN                                                                       
                                                                                                                                                              
- BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes                                                                           
+BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes                                                                           
                                                                                                                                                              
- 84:16:F9:FE:64:68  9C:53:22:84:F7:F9  -19    0 - 1      0    42554                                                                                          
- 84:16:F9:FE:64:68  EA:F0:19:3D:F6:4B  -19   54e-54e   686    41097   
+84:16:F9:FE:64:68  9C:53:22:84:F7:F9  -19    0 - 1      0    42554                                                                                          
+84:16:F9:FE:64:68  EA:F0:19:3D:F6:4B  -19   54e-54e   686    41097   
 ```
 
 Tungguin di kolom `#Data` nya, sampe dapet sekitar `40000` sampe `80000` an. Kalo udah dapet teken `CTRL+C` di terminal capture IVs sama serangan ARP request replay.
