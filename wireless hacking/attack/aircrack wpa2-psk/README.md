@@ -52,7 +52,7 @@ Catet:
 - `PWR`: Kekuatan sinyal AP dalam satuan decibel-milliwatt (`dBm`)
 
 > [!NOTE]
-> Pastiin `PWR` AP target kaga di atas `-60` powernya. Kalo di atas, berarti sinyal AP target lemah, jadi proses capture 4-way handshake bakal susah, EAPOL frame yang didapet bisa gagal atau gak lengkap, sama serangan deauth bakal jadi lama prosesnya atau malahan gagal.
+> Pastiin `PWR` AP target kaga di atas `-60` powernya. Kalo di atas, berarti sinyal AP target lemah, jadi proses capture 4-way handshake bakal susah, EAPOL frame yang didapet bisa gagal atau gak lengkap.
 
 #### 3. Capture Handshake
 
