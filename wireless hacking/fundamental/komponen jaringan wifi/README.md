@@ -1,10 +1,20 @@
 # Komponen Jaringan Wi-Fi
 
-## 1. ISP (Internet Service Provider)
-## 2. Modem
-## 3. Router
-## 4. AP (Access Point)
-## 5. Repeater
-## 6. Kabel Ethernet (LAN)
-## 7. Client
-## 8. Wireless Network Interface Card (WNIC)
+<div align="center">
+  <img src="" />
+  <h2 align="left">1. ISP (Internet Service Provider</h2>
+  <img src="" />
+  <h2 align="left">2. Modem</h2>
+  <img src="" />
+  <h2 align="left">3. Router</h2>
+  <img src="" />
+  <h2 align="left">4. AP (Access Point)</h2>
+  <img src="" />
+  <h2 align="left">5. Repeater</h2>
+  <img src="" />
+  <h2 align="left">6. Kabel Ethernet (LAN)</h2>
+  <img src="" />
+  <h2 align="left">7. Client</h2>
+  <img src="" />
+  <h2 align="left">8. Wireless Network Interface Card (WNIC)</h2>
+</div>
