@@ -1,9 +1,7 @@
 # Apa Itu Wi-Fi?
-
 Wi-Fi adalah teknologi jaringan yang kaga pake kabel yang dipake buat nyambungin perangkat client (kaya HP, laptop, dll) ke internet atau ke jaringan lokal (LAN).
 
 ## Cara Kerja Wi-Fi
-
 Wi-Fi itu cara kerjanya dia ngirim data lewat udara, jadi perangkat kaya modelan router atau Access Point (AP) itu nyebarin sinyal pake gelombang radio, terus perangkat client kaya HP atau laptop lu nangkep sinyal itu selama masih dalam jangkauan dia, pas lu konek, perangkat lu minta akses ke AP (termasuk ngecek password nya kalo emang pake password), abis itu data dikirim bolak-balik dari perangkat client ke AP lalu ke internet atau jaringan lokal, tapi karena prosesnya lewat udara, sinyalnya bisa keganggu jarak, tembok tebel, atau perangkat yang lain, makanya kadang koneksinya bisa lemot atau kurang stabil.
 
 ## Kelebihan Wi-Fi
@@ -17,4 +15,5 @@ Wi-Fi itu cara kerjanya dia ngirim data lewat udara, jadi perangkat kaya modelan
 - **Kecepatan:** Biasanya agak lemot sama kurang stabil kalo dibandingin sama kabel LAN langsung.
 - **Keamanan:** Mudah disadap kalo keamanannya lemah.
 
+## Kesimpulan
 Jadi intinya, Wi-Fi itu fleksibel dan praktis, tapi dari sisi kecepatan, stabilitas, sama keamanan masih kalah dibanding kabel LAN.
