@@ -1,6 +1,6 @@
 # Komponen Jaringan Wi-Fi
 
-Sebelum jauh ngebahas wireless hacking atau ngoprek jaringan, lu wajib paham dulu komponen jaringan Wi‑Fi itu apa aja. Jangan sampe modal nyerang doang tapi lu kaga ngerti alur internet dateng dari mana, lewat apa, terus nyampe ke device gimana. Nah, di bagian ini kita bakal ngebahas satu‑satu komponen yang biasa dipake di jaringan Wi‑Fi, mulai dari ISP sampai client.
+Sebelum jauh ngebahas wireless hacking, lu wajib paham dulu komponen jaringan Wi‑Fi itu apa aja. Jangan sampe modal nyerang doang tapi lu kaga ngerti alur internet dateng dari mana, lewat apa, terus nyampe ke device gimana. Nah, di bagian ini kita bakal ngebahas satu‑satu komponen yang biasa dipake di jaringan Wi‑Fi, mulai dari ISP sampai client.
 
 <div align="center">
   <h2 align="left">1. ISP (Internet Service Provider)</h2>
@@ -32,4 +32,5 @@ Sebelum jauh ngebahas wireless hacking atau ngoprek jaringan, lu wajib paham dul
   <p align="left">WNIC singkatan dari Wireless Network Interface Card adalah hardware (perangkat keras) Wi‑Fi di sisi client, bisa bawaan (internal) atau juga bisa berbentuk adapter USB. Fungsinya dipake buat perangkat client konek ke jaringan.</p>
 </div>
 
+## Kesimpulan
 Pasti lu puyeng, kan? Banyak banget komponennya. Gw juga dulu kira Wi‑Fi cuma satu benda doang. Pasti dalem hati lu nanya, “Kok ribet banget sih?” Nah, gw jawab nih: sekarang udah jaman modern. Sekarang ada yang namanya Wireless Home Router, di mana dia udah include Modem, Router, sama AP jadi satu. Jadinya lebih simpel, nggak perlu macem‑macem perangkat lagi buat bangun jaringan.
