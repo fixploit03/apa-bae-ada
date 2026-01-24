@@ -1,4 +1,4 @@
-# Apa Itu Wi-Fi
+# Apa Itu Wi-Fi?
 
 Wi-Fi adalah teknologi jaringan yang kaga pake kabel yang dipake buat nyambungin perangkat (kaya HP, laptop, dll) ke internet kalo kaga ke jaringan lokal (LAN).
 
