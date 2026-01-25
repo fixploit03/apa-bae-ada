@@ -1,6 +1,6 @@
-# Istilah-Istilah dalam Jaringan Wi-Fi
+# Istilah‑Istilah yang Ada di Wi‑Fi
 
-Sebelum masuk ke wireless hacking, ada satu hal penting yang wajib dipahamin dulu, yaitu istilah‑istilah dasar di jaringan Wi‑Fi. Jangan sampe pas lu liat tools, log, atau hasil scan malah bengong gara‑gara istilahnya asing semua.
+Sebelum masuk ke wireless hacking, ada satu hal penting yang wajib lu dipahamin dulu, yaitu istilah‑istilah yang ada di Wi‑Fi. Jangan sampe pas lu liat tools, log, atau hasil scan malah bengong gara‑gara istilahnya asing semua.
 
 Di bagian ini, kita bakal ngebahas istilah‑istilah yang sering muncul di dunia Wi‑Fi, mulai dari identitas jaringan, frekuensi, keamanan, performa, sampe mode operasi. Paham istilah ini bakal bikin lu:
 - Lebih ngerti cara kerja Wi‑Fi
