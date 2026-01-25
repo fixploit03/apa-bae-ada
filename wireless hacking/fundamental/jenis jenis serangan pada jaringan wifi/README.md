@@ -1,4 +1,4 @@
-# Jenis‑Jenis Serangan pada Jaringan Wi‑Fi
+# Jenis‑Jenis Serangan di Jaringan Wi‑Fi
 
 Abis lu paham dasar‑dasar Wi‑Fi, mulai dari komponen jaringan, standar IEEE 802.11, channel, frekuensi, sampe istilah‑istilah penting di dunia wireless, sekarang saatnya kita naik level ke tahap yang lebih serius, yaitu ngebahas jenis‑jenis serangan di jaringan Wi‑Fi.
 
