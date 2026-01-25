@@ -1,6 +1,6 @@
 # Komponen Jaringan Wi-Fi
 
-Sebelum jauh ngebahas wireless hacking, lu wajib paham dulu komponen jaringan Wi‑Fi itu apa aja. Jangan sampe modal nyerang doang tapi lu kaga ngerti alur internet dateng dari mana, lewat apa, terus nyampe ke device gimana. Nah, di bagian ini kita bakal ngebahas satu‑satu komponen yang biasa dipake di jaringan Wi‑Fi, mulai dari ISP sampai client.
+Sebelum masuk ke wireless hacking, lu wajib paham dulu komponen jaringan Wi‑Fi itu apa aja. Jangan sampe modal nyerang doang tapi lu kaga ngerti alur internet dateng dari mana, lewat apa, terus nyampe ke device gimana. Nah, di bagian ini kita bakal ngebahas satu‑satu komponen yang biasa dipake di jaringan Wi‑Fi, mulai dari ISP sampai client.
 
 <div align="center">
   <h2 align="left">1. ISP (Internet Service Provider)</h2>
