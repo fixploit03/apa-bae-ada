@@ -1,4 +1,4 @@
-# Standar‑Standar Wi‑Fi (IEEE 802.11)
+# Standar Wi‑Fi (IEEE 802.11)
 
 Sebelum masuk ke wireless hacking, penting banget buat paham dulu dasar-dasarnya. Wi-Fi itu punya standar resmi yang ngatur cara kerja, kecepatan, sama frekuensi yang dipake, dan semua itu ditentuin sama [IEEE](https://www.ieee.org/) lewat standar 802.11. Dari generasi paling jadul sampe yang paling modern, tiap standar punya karakteristik, kelebihan, sama kekurangannya masing-masing. Nah, di bagian ini kita bakal ngebahas evolusi standar Wi-Fi dari waktu ke waktu biar lu paham alurnya sebelum lanjut ke tahap berikutnya.
 
