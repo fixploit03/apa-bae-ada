@@ -2,23 +2,23 @@
 
 ## Tools Buat WEP & WPA/WPA2-PSK
 
-## 1. Aircrack-NG
+### 1. Aircrack-NG
 
-## 2. Cowpatty
+### 2. Cowpatty
 
-## 3. Wifite 
+### 3. Wifite 
 
-## 4. Hcxdumptool
+### 4. Hcxdumptool
 
-## 5. Hcxtools
+### 5. Hcxtools
 
-## 6. Bettercap
+### 6. Bettercap
 
-### 1. Fern Wi-Fi Cracker
+### 7. Fern Wi-Fi Cracker
 
 <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/fern.jpg" />
 
-## 7. Airgorah
+### 8. Airgorah
 
 ## Tools Buat WPA/WPA2-Enterprise
 
@@ -56,14 +56,15 @@
 
 <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/pixiewps.png" />
 
-## Tools Buat Evil Twin
+## Tools Buat Evil Twin (Khusus WPA/WPA2-PSK)
 
-### 1. Fluxion
+### 1. Wifiphisher
+
+<img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/wifiphisher.png" />
+
+### 2. Fluxion
 
 <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/fluxion.jpg" />
-
-### 2. Wifiphisher
-
 
 ## Tools All in One
 
@@ -74,5 +75,3 @@
 ### 2. Airgeddon
 
 <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/airgeddon.png" />
-
-
