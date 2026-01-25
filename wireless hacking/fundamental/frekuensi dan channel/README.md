@@ -17,9 +17,9 @@ Channel itu jalur di dalam frekuensi.
 
 Ibarat jalan raya:
 - Frekuensi = jalan tol
-- Channel = nomer lajur
+- Channel = nomer jalan
 
-Biar AP satu sama lain kaga tabrakan sinyalnya.
+Biar AP satu sama AP yang lain kaga tabrakan sinyalnya.
 
 ### 1. Channel 2.4 GHz
 - Rentangnya dari 2.400 sampe 2.4835 GHz
@@ -62,10 +62,26 @@ Nah kalo ini beda kelas.
 | 40 | 5200 |
 | 44 | 5220 |
 | 48 | 5240 |
-| 149 | 5745 |
-| 153 | 5765 |
-| 157 | 5785 |
-|161	|5805|
+| 52 | 5260 |
+| 56 | 5280 |
+| 60 | 5300 |
+| 64 | 5320 |
+| 100 | 5500 |
+| 104	| 5520 |
+| 108	| 5540 |
+| 112	| 5560 |
+| 116	| 5580 |
+| 120	| 5600 |
+| 124	| 5620 |
+| 128	| 5640 |
+| 132 |	5660 |
+| 136	| 5680 |
+| 140	| 5700 |
+| 149	| 5745 |
+| 153	| 5765 |
+| 157	| 5785 |
+| 161	| 5805 |
+| 165	| 5825 |
 
 ## Hubungan Frekuensi & Channel
 - Frekuensi = wilayah sinyal
