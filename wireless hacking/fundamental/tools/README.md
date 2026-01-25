@@ -4,19 +4,26 @@
 
 ### 1. Aircrack-NG
 
+<img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/aircrack.jpg" />
+
 ### 2. Cowpatty
+
+<img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/cowpatty.jpg" />
 
 ### 3. Hcxdumptool
 
+<img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/hcxdumptool.png" />
+
 ### 4. Hcxtools
 
+<img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/hcxtools.png" />
+
 ### 5. Bettercap
+<img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/bettercap.png" />
 
-### 6. Fern Wi-Fi Cracker
+### 6. Airgorah
 
-<img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/fern.jpg" />
-
-### 8. Airgorah
+<img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/airgorah.png" />
 
 ## Tools Buat WPA/WPA2-Enterprise
 
@@ -32,11 +39,11 @@
 
 <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/asleap.jpeg" />
 
-### 5. EAPMD5pass
+### 4. EAPMD5pass
 
 <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/eapmd5pass.png" />
 
-### 6. EAPHammer
+### 5. EAPHammer
 
 <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/eaphammer.png" />
 
@@ -66,10 +73,14 @@
 
 ## Tools All in One
 
-### 1. Wifite
+### 1. Fern Wi-Fi Cracker
+
+<img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/fern.jpg" />
+
+### 2. Wifite
 
 <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/wifite.png" />
 
-### 2. Airgeddon
+### 3. Airgeddon
 
 <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/airgeddon.png" />
