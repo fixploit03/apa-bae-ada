@@ -11,6 +11,7 @@ ada apa bae
     - [Apa Itu Wi-Fi?](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/apa%20itu%20wifi)
     - [Komponen Jaringan Wi-Fi](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/komponen%20jaringan%20wifi)
     - [Standar‑Standar Wi‑Fi (IEEE 802.11)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/standar%20standar%20wifi)
+    - [Istilah-Istilah dalam Jaringan Wi-Fi](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/istilah%20dalam%20jaringan%20wifi)
   - [Setup LAB](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab)
     - [Reset Konfigurasi (Mikrotik)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab/mikrotik%20reset%20config)
     - [Konfigurasi IP Statik (Mikrotik)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab/konfigurasi%20ip%20statik%20mikrotik)
