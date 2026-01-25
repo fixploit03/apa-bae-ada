@@ -42,9 +42,15 @@
 
 ### 1. Reaver
 
+<img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/reaver.jpeg" />
+
 ### 2. Bully
 
+<img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/bully.jpg" />
+
 ### 3. PixieWPS
+
+<img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/pixiewps.png" />
 
 ## Tools All in One
 
