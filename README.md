@@ -11,6 +11,7 @@ ada apa bae
     - [Apa Itu Wi-Fi?](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/apa%20itu%20wifi)
     - [Komponen Jaringan Wi-Fi](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/komponen%20jaringan%20wifi)
     - [Standar‑Standar Wi‑Fi (IEEE 802.11)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/standar%20standar%20wifi)
+    - [Jenis-Jenis Protokol Keamanan Wi-Fi](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/jenis%20jenis%20protokol%20keamanan%20wifi)
     - [Istilah-Istilah dalam Jaringan Wi-Fi](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/istilah%20dalam%20jaringan%20wifi)
     - [Frekuensi & Channel](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/frekuensi%20dan%20channel)
     - [Apa Itu Wireless Hacking?](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/apa%20itu%20wireless%20hacking)
