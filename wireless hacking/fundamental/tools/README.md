@@ -6,15 +6,13 @@
 
 ### 2. Cowpatty
 
-### 3. Wifite 
+### 3. Hcxdumptool
 
-### 4. Hcxdumptool
+### 4. Hcxtools
 
-### 5. Hcxtools
+### 5. Bettercap
 
-### 6. Bettercap
-
-### 7. Fern Wi-Fi Cracker
+### 6. Fern Wi-Fi Cracker
 
 <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/fern.jpg" />
 
