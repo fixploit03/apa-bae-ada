@@ -14,6 +14,10 @@
 
 ## 6. Bettercap
 
+### 1. Fern Wi-Fi Cracker
+
+<img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/fern.jpg" />
+
 ## 7. Airgorah
 
 ## Tools Buat WPA/WPA2-Enterprise
@@ -52,12 +56,23 @@
 
 <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/pixiewps.png" />
 
+## Tools Buat Evil Twin
+
+### 1. Fluxion
+
+<img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/fluxion.jpg" />
+
+### 2. Wifiphisher
+
+
 ## Tools All in One
 
-### 1. Fern Wi-Fi Cracker
+### 1. Wifite
 
-### 2. Wifite
+<img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/wifite.png" />
 
-### 3. Airgeddon
+### 2. Airgeddon
 
-### 4. Fluxion
+<img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/airgeddon.png" />
+
+
