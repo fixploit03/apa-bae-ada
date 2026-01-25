@@ -1,8 +1,10 @@
-# Jenis-Jenis Protokol Keamanan Wi-Fi
+# Protokol Keamanan Wi-Fi
 
 Sebelum masuk ke wireless hacking, penting juga buat ngerti jenis‑jenis protokol keamanan Wi‑Fi yang biasa dipake. Biar lu bisa tau mana jaringan yang gampang dibobol, mana yang lumayan aman, sama mana yang paling susah buat dibobol. Nah, di sini lu bakal kenalan sama jenis-jenis protokol keamanan Wi‑Fi yang sering ditemuin di lapangan.
 
-## 1. Open (Kaga Pake Password)
+## Jenis-Jenis Protokol Keamanan Wi-Fi
+
+### 1. Open (Kaga Pake Password)
 - Ciri-cirinya:
   - Kaga pake password, semua orang bisa konek.
   - Biasanya ada di Wi-Fi publik kaya di kafe kalo kaga di mall.
@@ -10,7 +12,7 @@ Sebelum masuk ke wireless hacking, penting juga buat ngerti jenis‑jenis protok
   - Semua data yang lewat bisa disadap.
   - Paling kaga aman kalo dipake buat transaksi yang sifatnya sensitif.
  
-## 2. WEP (Wired Equivalent Privacy)
+### 2. WEP (Wired Equivalent Privacy)
 - Tahun: 1997
 - Ciri-cirinya:
   - Pake enkripsi RC4.
@@ -24,7 +26,7 @@ Kapan ketemunya sama modelan yang kaya gini?: Biasanya cuma ada di AP jadul atau
 > [!NOTE]
 > Jangan pake WEP buat jaringan penting, pake kalo cuma buat belajar aja.
 
-## 3. WPA (Wi-Fi Protected Access)
+### 3. WPA (Wi-Fi Protected Access)
 - Tahun: 2003
 - Ciri-cirinya:
   - Ngegantiin WEP karena kebapukannya.
@@ -35,7 +37,7 @@ Kapan ketemunya sama modelan yang kaya gini?: Biasanya cuma ada di AP jadul atau
 
 Kapan ketemunya sama modelan yang kaya gini?: Biasanya cuma ada di jaringan rumah pas awal-awal taun 2000-an.
 
-## 4. WPA2
+### 4. WPA2
 - Tahun: 2004
 - Ciri-cirinya:
   - Standar yang paling populer sebelum adanya WPA3.
@@ -46,7 +48,7 @@ Kapan ketemunya sama modelan yang kaya gini?: Biasanya cuma ada di jaringan ruma
  
 Kapan ketemunya sama modelan yang kaya gini?: Biasanya ketemu di hampir semua router modern sebelum taun 2018.
 
-## 5. WPA3
+### 5. WPA3
 - Tahun: 2018
 - Ciri-cirinya:
   - Standar yang paling baru sama yang paling aman buat jaman sekarang.
