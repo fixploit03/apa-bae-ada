@@ -1,7 +1,5 @@
 # Enkripsi & Standar Keamanan Wi-Fi
 
-Sebelum masuk ke wireless hacking, penting banget buat ngerti jenis-jenis standar keamanan Wi-Fi yang biasa dipake. Biar lu bisa tau mana jaringan yang gampang dibobol, mana yang lumayan aman, sama mana yang paling susah buat dibobol. Di sini lu bakal kenalan sama evolusi keamanan Wi-Fi dari yang paling lemah sampe yang paling kuat.
-
 ## Jenis-Jenis Standar Keamanan Wi-Fi
 
 ### 1. Open (Kaga Pake Password)
@@ -101,12 +99,3 @@ Kekurangannya:
 
 > [!NOTE]
 > Meski WPA3 jauh lebih aman, bukan berarti 100% kaga bisa dibobol. Kalo passwordnya lemah atau konfigurasi keamanannya salah (misconfiguration), sama aja boong.
-
-## Kesimpulan
-
-Sekarang lu udah paham evolusi keamanan Wi-Fi, dari yang paling gampang dibobol sampe yang paling susah.
-- Open: Kaga ada enkripsi, siapa aja bisa sadap.
-- WEP: Udah bapuk, bisa dibobol dalam hitungan menit.
-- WPA: Lebih aman dari WEP, tapi masih lemah.
-- WPA2: Standar yang masih paling banyak dipake, aman kalau passwordnya kuat.
-- WPA3: Standar terbaru dan paling aman, tapi belum sepamor WPA2.
