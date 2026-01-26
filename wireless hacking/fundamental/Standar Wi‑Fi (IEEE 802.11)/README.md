@@ -1,7 +1,5 @@
 # Standar Wi‑Fi (IEEE 802.11)
 
-Sebelum masuk ke wireless hacking, penting banget buat paham dulu dasar-dasarnya. Wi-Fi itu punya standar resmi yang ngatur cara kerja, kecepatan, sama frekuensi yang dipake, dan semua itu ditentuin sama [IEEE](https://www.ieee.org/) lewat standar 802.11. Dari generasi paling jadul sampe yang paling modern, tiap standar punya karakteristik, kelebihan, sama kekurangannya masing-masing. Nah, di bagian ini kita bakal ngebahas evolusi standar Wi-Fi dari waktu ke waktu biar lu paham alurnya sebelum lanjut ke tahap berikutnya.
-
 ## Jeni-Jenis Standar‑Standar Wi‑Fi (IEEE 802.11)
 
 ### 1. IEEE 802.11
@@ -24,6 +22,3 @@ Tahun 2013, IEEE ngenalin 802.11ac yang fokusnya ke performa tinggi. Standar ini
 
 ### 7. IEEE 802.11ax (Wi-Fi 6/6E)
 IEEE 802.11ax yang rilis tahun 2019 ini dikenal sebagai Wi-Fi 6, terus versi lanjutannya Wi-Fi 6E nambahin dukungan frekuensi 6 GHz. Fokus utamanya bukan cuma soal kenceng doang, tapi lebih ke efisiensi sama kestabilan, apalagi kalo jaringannya lagi rame. Pake teknologi kaya [OFDMA](https://www.asus.com/id/support/faq/1042759/), TWT (Target Wake Time) buat ngirit batre perangkat, plus performa yang tetep stabil walaupun banyak client konek secara barengan, Wi-Fi 6 ini cocok banget buat rumah jaman sekarang yang isinya perangkat semua.
-
-## Kesimpulan
-Dari pembahasan di atas bisa keliatan kalo standar Wi-Fi itu terus berkembang, dari yang awalnya lemot banget sampe sekarang jadi kenceng, efisien, dan stabil walaupun dipake rame-rame. Paham perbedaan tiap standar 802.11 ini penting banget, apalagi kalo lu mau ngulik jaringan wireless lebih dalem, entah itu buat ngatur jaringan biar aman atau buat belajar wireless hacking secara bener. Dengan ngerti fondasinya, lu kaga cuma asal nyerang, tapi tau apa yang lu hadapin dan kenapa suatu jaringan bisa kuat atau lemah.
