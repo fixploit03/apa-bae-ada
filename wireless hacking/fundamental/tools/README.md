@@ -219,6 +219,36 @@ Airgeddon adalah rajanya tool framework CLI buat ngecrack kunci Wi-Fi. dia ngedu
 > [!NOTE]
 > Airgeddon itu dia ngebungkus tools-tools kaya Aircrack-NG, Reaver, Bully, dll jadi satu.
 
+## Tools Pendukung
+
+### 1. iw
+
+iw adalah tool CLI bawaan Linux yang dipake buat ngatur sama ngecek interface wireless. Biasanya dipake buat ngecek mode Wi-Fi, ganti channel, ngecek kualitas sinyal, sampe ngelihat informasi AP yang ada di sekitar. Tool ini sering dipake barengan sama tools lain buat wireless hacking.
+
+### 2. macchanger
+
+macchanger adalah tool CLI yang dipake buat spoof MAC address. Tujunya biar lu kaga gampang ketauan.
+
+### 3. MDK3
+
+MDK3 adalah tool CLI yang dipake buat ngejalanin macem-macem jenis serangan di jaringan Wi-Fi.
+
+### 4. MDK4
+
+MDK4 adalah tool CLI yang merupakan pengembangan dari MDK3. Fungsinya kurang lebih sama aja, tapi ada fitur-fitur baru yang kaga ada di MDK3.
+
+### 5. Hashcat
+
+Hashcat adalah tool CLI yang dipake buat ngecrack berbagai jenis format hash. Tool ini biasanya sepaket sama Hcxdumptool sama Hcxtools.
+
+### 6. John the Ripper
+
+John the Ripper atau yang biasa disingkat `jtr` adalah tool yang fungsinya kurang lebih sama kaya Hashcat, yaitu buat ngecrack berbagai jenis format hash. Bedanya, Hashcat itu performanya paling maksimal kalo dijalanin pake GPU, sedangkan John the Ripper lebih fleksibel karena bisa jalan optimal pake CPU, walaupun sekarang juga udah ada yang support pake GPU di versi jumbo.
+
+### 7. Kismet
+
+Kismet itu tool CLI yang dipake buat mantau jaringan Wi-Fi. Bahasa kerennya, tool ini dipake sebagai WIDS (Wireless Intrusion Detection System). Tugasnya buat ngescan jaringan, ngecek apakah ada yang nyerang, aktivitas yang aneh, atau hal-hal yang mencurigakan yang ada di jaringan Wi-Fi. Kismet juga selain CLI dia bisa dipake lewat UI (diakses lewat browser).
+
 ## Kesimpulan
 
 Jadi intinya, tools-tools yang udah dibahas tadi itu adalah senjata utama lu dalam wireless hacking. Lu kaga harus langsung jago semua, yang penting paham fungsi, alur, sama kapan tools itu dipake. Mulai aja dari yang dasar, kuasain satu-satu, baru ke tools berikutnya. Inget, wireless hacking itu bukan soal banyak-banyakan tools, tapi seberapa paham lu make tools itu dengan bener dan bertanggung jawab. Kalo fondasinya udah kuat, praktek ke depannya bakal jauh lebih gampang dan hasilnya juga bakalan maksimal.
