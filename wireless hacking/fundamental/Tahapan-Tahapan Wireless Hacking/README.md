@@ -1,7 +1,5 @@
 # Tahapan-Tahapan Wireless Hacking
 
-Sebelum kita masuk ke praktek wireless hacking, lu kudu tau dulu apa aja tahapan-tahapan wireless hacking. Kenapa ini dibahas? Biar lu ngerti urutan-urutanya, prosesnya gimana, step by step-nya apa aja. Jadi nanti pas praktek, lu kaga bingung, kaga planga-plongo sama asal pencet-pencet doang, sama udah punya bekel dasar buat ngejalanin tiap-tiap jenis serangannya.
-
 ## 1. Reconnaissance (Ngumpulin Info)
 Ini proses paling awal di wireless hacking, lu harus ngumpulin informasi dulu sebanyak-banyaknya tentang target yang mau lu serang:
 
@@ -49,8 +47,3 @@ Kalo lu udah bisa masuk, lu kudu jaga akesnya biar nanti lu bisa konek lagi kapa
 Yang dilakuin:
 - Nginstal backdoor (pintu belakang)
 - Ngubah setingan router
-
-## Kesimpulan
-Dari semua tahapan wireless hacking yang udah kita bahas, bisa ditarik kesimpulan kalo wireless hacking itu ada alurnya dan kaga bisa asal jalan gitu aja. Prosesnya mulai dari ngumpulin info, ngintip trafik, dapetin akses, ngecek hasil, sampe jaga akses. Semuanya saling nyambung dan kaga boleh dilewatin sembarangan.
-
-Kalo lu udah paham sama tahapan ini, nanti pas praktek lu bakal lebih tenang, lebih terarah, dan tau persis apa yang lagi lu lakuin.
