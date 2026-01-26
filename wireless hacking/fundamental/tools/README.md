@@ -1,5 +1,7 @@
 # Tools-Tools yang Dipake Buat Wireless Hacking
 
+Sebelum kita masuk ke praktek wireless hacking, lu kudu tau dulu apa aja tools-tools yang dipake buat wireless hacking. Tools ini penting banget buat lu kuasain, karena kalo lu kaga ngerti tools itu fungsinya buat apa dan cara makenya gimana, ntar lu bakal bingung sendiri pas prakteknya sama hasilnya juga kaga maksimal.
+
 ## Tools Buat WEP & WPA/WPA2-PSK
 
 ### 1. Aircrack-NG Suite
@@ -156,7 +158,7 @@ PixieWPS adalah tool CLI yang dipake buat ngejalanin Pixie Dust Attack, yaitu se
 ### 1. Hostapd
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/wifiphisher.png" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/hostapd.png" />
 </div>
 
 Hostapd adalah tool CLI paling dasar yang dipake buat ngebikin AP palsu (Rogue AP). Biasanya tool ini dikombinasiin sama Evil Twin Attack buat dapetin kredensial korban.
@@ -216,3 +218,7 @@ Airgeddon adalah rajanya tool framework CLI buat ngecrack kunci Wi-Fi. dia ngedu
 
 > [!NOTE]
 > Airgeddon itu dia ngebungkus tools-tools kaya Aircrack-NG, Reaver, Bully, dll jadi satu.
+
+## Kesimpulan
+
+Jadi intinya, tools-tools yang udah dibahas tadi itu adalah senjata utama lu dalam wireless hacking. Lu kaga harus langsung jago semua, yang penting paham fungsi, alur, sama kapan tools itu dipake. Mulai aja dari yang dasar, kuasain satu-satu, baru ke tools berikutnya. Inget, wireless hacking itu bukan soal banyak-banyakan tools, tapi seberapa paham lu make tools itu dengan bener dan bertanggung jawab. Kalo fondasinya udah kuat, praktek ke depannya bakal jauh lebih gampang dan hasilnya juga bakalan maksimal.
