@@ -17,6 +17,7 @@ ada apa bae
     - [Apa Itu Wireless Hacking?](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/apa%20itu%20wireless%20hacking)
     - [Jenis‑Jenis Serangan di Jaringan Wi‑Fi](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/jenis%20jenis%20serangan%20pada%20jaringan%20wifi)
     - [Tahapan-Tahapan Wireless Hacking](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/tahapan%20tahapan%20wireless%20hacking)
+    - [Tools-Tools yang Dipake Buat Wireless Hacking](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/tools)
   - [Setup LAB](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab)
     - [Reset Konfigurasi (Mikrotik)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab/mikrotik%20reset%20config)
     - [Konfigurasi IP Statik (Mikrotik)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab/konfigurasi%20ip%20statik%20mikrotik)
