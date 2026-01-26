@@ -9,7 +9,7 @@ ada apa bae
   - [Fundamental](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental)
     - [Pendahuluan](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/pendahuluan)
     - [Apa Itu Wi-Fi?](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/apa%20itu%20wifi)
-    - [Komponen Jaringan Wi-Fi](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/komponen%20jaringan%20wifi)
+    - [Komponen Jaringan Wi-Fi](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/Komponen%20Jaringan%20Wi-Fi)
     - [Standar Wi‑Fi (IEEE 802.11)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/standar%20standar%20wifi)
     - [Frekuensi & Channel](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/frekuensi%20dan%20channel)
     - [Enkripsi & Standar Keamanan Wi-Fi](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/Enkripsi%20%26%20Standar%20Keamanan%20Wi-Fi)
