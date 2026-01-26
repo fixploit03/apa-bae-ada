@@ -1,14 +1,5 @@
 # Istilah‑Istilah yang Ada di Wi‑Fi
 
-Sebelum masuk ke wireless hacking, ada satu hal penting yang wajib lu dipahamin dulu, yaitu istilah‑istilah yang ada di Wi‑Fi. Jangan sampe pas lu liat tools, log, atau hasil scan malah bengong gara‑gara istilahnya asing semua.
-
-Di bagian ini, kita bakal ngebahas istilah‑istilah yang sering muncul di dunia Wi‑Fi, mulai dari identitas jaringan, frekuensi, keamanan, performa, sampe mode operasi. Paham istilah ini bakal bikin lu:
-- Lebih ngerti cara kerja Wi‑Fi
-- Gampang baca hasil scanning dan monitoring
-- Nggak asal ngikut tutorial pas belajar wireless hacking
-
-Anggap aja ini kamus kecil yang wajib lu kuasai, sebelum kita ke materi yang berikutnya.
-
 ## 1. Identifikasi Jaringan
 - **SSID (Service Set Identifier):** Nama jaringan Wi-Fi
 - **ESSID (Extended Service Set Identifier):** Nama jaringan Wi-Fi dalam mode infrastruktur
@@ -83,6 +74,3 @@ Anggap aja ini kamus kecil yang wajib lu kuasai, sebelum kita ke materi yang ber
 - **MAC Filtering**: Nyaring perangkat boleh masuk apa kaga pake MAC address
 - **DHCP:** Sistem yang ngasih IP secara otomatis ke client
 - **Gateway:** Jalur keluar-masuk jaringan ke internet
-
-## Kesimpulan
-Nah, itu dia sekilas kamus kecil istilah‑istilah yang sering muncul di dunia Wi‑Fi. Mungkin awalnya banyak yang kedengeran ribet, tapi sebenernya semua istilah itu cuma cara buat kita ngerti gimana jaringan Wi‑Fi jalan, dari AP sampai ke perangkat client.
