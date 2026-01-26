@@ -1,63 +1,112 @@
-# Protokol Keamanan Wi-Fi
+# Enkripsi & Standar Keamanan Wi-Fi
 
-Sebelum masuk ke wireless hacking, penting juga buat ngerti jenis‑jenis protokol keamanan Wi‑Fi yang biasa dipake. Biar lu bisa tau mana jaringan yang gampang dibobol, mana yang lumayan aman, sama mana yang paling susah buat dibobol. Nah, di sini lu bakal kenalan sama jenis-jenis protokol keamanan Wi‑Fi yang sering ditemuin di lapangan.
+Sebelum masuk ke wireless hacking, penting banget buat ngerti jenis-jenis standar keamanan Wi-Fi yang biasa dipake. Biar lu bisa tau mana jaringan yang gampang dibobol, mana yang lumayan aman, sama mana yang paling susah buat dibobol. Di sini lu bakal kenalan sama evolusi keamanan Wi-Fi dari yang paling lemah sampe yang paling kuat.
 
-## Jenis-Jenis Protokol Keamanan Wi-Fi
+## Jenis-Jenis Standar Keamanan Wi-Fi
 
 ### 1. Open (Kaga Pake Password)
 - Ciri-cirinya:
-  - Kaga pake password, semua orang bisa konek.
-  - Biasanya ada di Wi-Fi publik kaya di kafe kalo kaga di mall.
+  - Kaga pake enkripsi sama sekali.
+  - Siapa aja bisa konek kaga make password.
+  - Biasa ditemuin di Wi-Fi publik (kaya kafe, mall, bandara, hotel).
 - Kekurangannya:
-  - Semua data yang lewat bisa disadap.
-  - Paling kaga aman kalo dipake buat transaksi yang sifatnya sensitif.
- 
-### 2. WEP (Wired Equivalent Privacy)
-- Tahun: 1997
-- Ciri-cirinya:
-  - Pake enkripsi RC4.
-  - Kunci bisa 64-bit kalo kaga 128-bit.
-- Kekurangannya:
-  - Cepet banget dibobol.
-  - Kaga aman buat dipake di jaringan modern.
-
-Kapan ketemunya sama modelan yang kaya gini?: Biasanya cuma ada di AP jadul atau jaringan yang kaga diupdate.
+  - Semua traffic Wi-Fi bisa disadap.
+  - Rentan terhadap serangan MITM.
+  - Bahaya kalau dipake buat ngakses mbanking, email, atau data sensitif tanpa enkripsi tambahan (HTTPS/VPN).
 
 > [!NOTE]
-> Jangan pake WEP buat jaringan penting, pake kalo cuma buat belajar aja.
+> Meski Wi-Fi-nya open, kalau lu pake HTTPS atau VPN, data lu tetap aman. Yang bahaya itu kalau lu akses situs HTTP atau aplikasi yang kaga pake enkripsi.
+
+### 2. WEP (Wired Equivalent Privacy)
+- Tahun: 1997
+- Enkripsi: RC4 (stream cipher)
+- Panjang kunci: 64-bit atau 128-bit
+
+Ciri-cirinya:
+- Standar keamanan Wi-Fi pertama.
+- Pake enkripsi RC4 dengan Initialization Vector (IV) yang lemah.
+- Kuncinya static (kaga berubah-ubah).
+
+Kekurangannya:
+- Paling gampang buat dibobol, bisa dalam hitungan menit (bahkan detik).
+- IV nya bisa diprediksi, jadi enkripsinya bisa dicrack make packet injection.
+- Tools kaya Aircrack-NG bisa ngecrack kunci WEP cuma butuh sekitar `40.000`–`100.000` paket doang.
+
+> [!NOTE]
+> Jangan pernah pake WEP buat jaringan penting. Pake cuma buat belajar atau testing aja.
 
 ### 3. WPA (Wi-Fi Protected Access)
 - Tahun: 2003
-- Ciri-cirinya:
-  - Ngegantiin WEP karena kebapukannya.
-  - Pake enkripsi TKIP (Temporal Key Integrity Protocol).
-  - Lebih aman dari WEP.
-- Kekurangannya:
-  - Masih bisa dibobol make tools tertentu.
+- Enkripsi: TKIP (Temporal Key Integrity Protocol)
+- Key management: 4-way handshake
 
-Kapan ketemunya sama modelan yang kaya gini?: Biasanya cuma ada di jaringan rumah pas awal-awal taun 2000-an.
+Ciri-cirinya:
+- Dibuat sebagai solusi sementara buat ngegantiin WEP yang udah bapuk.
+- Pake enkripsi TKIP yang lebih dinamis (kuncinya berubah-ubah per-packet).
+- Ada 2 mode:
+  - WPA-Personal (PSK): Pake pre-shared key (password yang sama buat semua user).
+  - WPA-Enterprise: Pake server RADIUS buat autentikasi individual.
+
+Kekurangannya:
+- TKIP udah dianggep lemah dan deprecated (kaga kepake lagi).
+- Rentan terhadap packet injection dan replay attack.
+- Bisa dicrack make dictionary attack kalau passwordnya lemah.
 
 ### 4. WPA2
 - Tahun: 2004
-- Ciri-cirinya:
-  - Standar yang paling populer sebelum adanya WPA3.
-  - Pake AES (Advanced Encryption Standard) yang jauh lebih kuat buat enkripsinya.
-  - Ngedukung WPA2-PSK (personal) sama WPA2-Enterprise (perusahaan, pake server RADIUS).
-- Kekurangannya:
-  - Bisa kena serangan KRACK (Key Reinstallation Attack) kalo firmwarenya kaga diupdate.
- 
-Kapan ketemunya sama modelan yang kaya gini?: Biasanya ketemu di hampir semua router modern sebelum taun 2018.
+- Enkripsi: AES-CCMP (Advanced Encryption Standard - Counter Mode CBC-MAC Protocol)
+- Key management: 4-way handshake
+
+Ciri-cirinya:
+- Standar paling populer yang masih dipake sampe sekarang.
+- Pake enkripsi AES yang jauh lebih kuat dari TKIP.
+- Ada 2 mode:
+  - WPA2-Personal (PSK): Pake password yang sama buat semua user. Paling sering dipake di rumah.
+  - WPA2-Enterprise (802.1X): Pake server RADIUS, tiap user punya username/password sendiri. Lebih aman, biasa dipake di kantor atau kampus.
+
+Kekurangannya:
+- WPA2-PSK rentan sama serangan offline kaya dictionary sama brute force attack:
+  - Penyerang bisa capture 4-way handshake.
+  - Handshake dicrack secara offline pake wordlist kalo kaga brute force.
+  - Kalo passwordnya lemah, bisa dicrack dalam hitungan menit.
+- Rentan sama PMKID attack.
+- Bisa kena KRACK (Key Reinstallation Attack) kalau firmware kaga diupdate.
+
+> [!NOTE]
+> WPA2-Enterprise jauh lebih aman dari WPA2-PSK karena kaga pake password yang dibagi-bagi (PSK). Kalo lu setup jaringan kantor, wajib pake WPA2-Enterprise.
 
 ### 5. WPA3
 - Tahun: 2018
-- Ciri-cirinya:
-  - Standar yang paling baru sama yang paling aman buat jaman sekarang.
-  - Pake enkripsi yang lebih kuat, namanya SAE (Simultaneous Authentication of Equals) buat Wi-Fi personal.
-  - Aman dari yang namanya serangan offline kaya brute force sama dictionary attack.
-- Kekurangannya:
-  - Masih belum sepamor WPA2, tapi makin kesini makin banyak router terbaru yang ngedukung WPA3.
- 
-Kapan ketemunya sama modelan yang kaya gini?: Biasanya ada di router baru dari taun 2018 ke atas, tapi sekarang makin banyak router modern yang ngedukung WPA3.
+- Enkripsi:
+  - WPA3-Personal: AES-GCMP
+  - WPA3-Enterprise: AES-GCMP-256
+- Key management: SAE (Simultaneous Authentication of Equals)
+
+Ciri-cirinya:
+- Standar terbaru dan paling aman di jaman sekarang.
+- Pake SAE (Dragonfly handshake) buat gantiin 4-way handshake tradisional.
+- Lebih aman dari serangan offline kaya dictionary sama brute force attack.
+- Ngedukung forward secrecy (kunci sesi kaga bisa didecrypt meski passwordnya bocor).
+- Ada 2 mode:
+  - WPA3-Personal (SAE): Lebih aman dari WPA2-PSK, kaga bisa dicrack secara offline dengan gampang.
+  - WPA3-Enterprise (192-bit security): Enkripsi level militer buat enterprise.
+
+Kekurangannya:
+- Masih ada vulnerability, contohnya Dragonblood (CVE-2019-9494):
+  - Side-channel attack.
+  - Timing attack.
+  - Downgrade attack ke WPA2 (kalau router support transition mode).
+- Belum sepamor WPA2, jadi masih jarang ditemuin di lapangan.
+- Butuh hardware yang lebih baru buat support WPA3.
+
+> [!NOTE]
+> Meski WPA3 jauh lebih aman, bukan berarti 100% kaga bisa dibobol. Kalo passwordnya lemah atau konfigurasi keamanannya salah (misconfiguration), sama aja boong.
 
 ## Kesimpulan
-Nah, sekarang lu udah paham kan bedanya protokol-protokol keamanan Wi-Fi dari yang paling gampang buat dibobol sampe yang paling susah? Dari Open yang kalo mau konek kaga pake password, WEP yang udah bapuk, WPA yang udah mulai ketinggalan jaman, WPA2 yang masih jadi standar di mana-mana, sampe WPA3 yang paling aman buat jaringan jaman sekarang.
+
+Sekarang lu udah paham evolusi keamanan Wi-Fi, dari yang paling gampang dibobol sampe yang paling susah.
+- Open: Kaga ada enkripsi, siapa aja bisa sadap.
+- WEP: Udah bapuk, bisa dibobol dalam hitungan menit.
+- WPA: Lebih aman dari WEP, tapi masih lemah.
+- WPA2: Standar yang masih paling banyak dipake, aman kalau passwordnya kuat.
+- WPA3: Standar terbaru dan paling aman, tapi belum sepamor WPA2.
