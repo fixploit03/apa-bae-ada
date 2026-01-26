@@ -15,6 +15,3 @@ Wireless hacking fokus ke protokol [IEEE 802.11](https://en.wikipedia.org/wiki/I
 - Paket data
 - Manajemen frame (beacon, auth, assoc, dll)
 - Kualitas sinyal (PWR)
-
-## Kesimpulan
-Intinya, wireless hacking itu bukan soal ngebobol Wi-Fi sembarangan, tapi lebih ke proses ngetes dan nganalisis seberapa aman suatu jaringan wireless. Dengan wireless hacking, kita bisa tau celah keamanan yang masih kebuka, ngecek kekuatan enkripsi, sama mastiin konfigurasi access point udah bener apa belum.
