@@ -1,7 +1,5 @@
 # Frekuensi & Channel
 
-Wi‑Fi itu kaga cuma soal sinyal sama password doang. Di balik sinyal yang keliatan sepele, ada frekuensi sama channel yang ngatur gimana data jalan di udara. Kalo dua hal ini kaga lu pahamin, mau secanggih apa pun tools yang lu pake, hasilnya lu tetep kaga bakalan dapet apa‑apa.
-
 ## 1. Frekuensi
 Wi‑Fi itu jalan pake gelombang radio, bukan kabel. Nah gelombang ini jalan di frekuensi tertentu.
 
@@ -93,7 +91,3 @@ Nah kalo ini beda kelas.
   - Evil Twin, channel lu kudu sama persis
 
 Salah channel = lu kayak kerja rodi, capek iya, hasilnya kaga ada.
-
-## Kesimpulan
-
-Frekuensi sama channel itu pondasi di jaringan Wi‑Fi. Lu boleh jago make tools apa aja, tapi kalo kaga ngerti ini, lu cuma jadi tukang pencet-pencet keyboard doang.
