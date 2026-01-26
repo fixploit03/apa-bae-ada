@@ -1,14 +1,5 @@
 # Jenis‑Jenis Serangan di Jaringan Wi‑Fi
 
-Abis lu paham dasar‑dasar Wi‑Fi, mulai dari komponen jaringan, standar IEEE 802.11, channel, frekuensi, sampe istilah‑istilah penting di dunia wireless, sekarang saatnya kita naik level ke tahap yang lebih serius, yaitu ngebahas jenis‑jenis serangan di jaringan Wi‑Fi.
-
-Lu mesti paham nih, Wi‑Fi itu kerjanya lewat udara. Jadi data yang lewat bisa aja ditangkep, dioprek, atau diganggu kalo setingan keamanannya lemah. Makanya serangan Wi‑Fi ini penting buat dipelajarin, bukan cuma buat yang mau nyerang, tapi juga buat yang tugasnya jagain jaringan.
-
-Di bagian ini, lu bakal ketemu sama macem‑macem teknik serangan Wi‑Fi yang sering kejadian di dunia nyata. Ada yang cuma nguping doang, ada yang bikin client ketendang dari jaringan, ada juga yang nipu user tanpa mereka sadar. Semua bakal dibahas biar lu ngerti alur mainnya, tau tujuan tiap serangan, dan paham dampak yang bisa ditimbulin.
-
-> [!NOTE]
-> **Inget baik‑baik:** lu kaga bisa jaga jaringan kalo lu kaga ngerti cara jaringan itu diserang.
-
 ## 1. Sniffing (Nguping)
 Sniffing itu ibarat lu nguping orang yang lagi ngobrol, tapi versinya jaringan.
 
@@ -164,7 +155,3 @@ Dampaknya:
 - Jaringan jadi lemot
 - Client kaga bisa connect
 - AP nya jadi ngecrash
-
-## Kesimpulan
-
-Dari semua jenis serangan Wi‑Fi yang udah kita bahas, bisa ditarik satu kesimpulan. Wi‑Fi itu bukan cuma soal sinyal doang, tapi soal keamanan juga. Mulai dari sniffing yang cuma nguping doang, sampe serangan licik kaya Evil Twin sama PMKID, semuanya nunjukin kalo satu setingan yang lemah aja udah cukup buat jadi pintu masuk penyerang.
