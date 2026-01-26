@@ -1,7 +1,5 @@
 # Tools-Tools yang Dipake Buat Wireless Hacking
 
-Sebelum kita masuk ke praktek wireless hacking, lu kudu tau dulu apa aja tools-tools yang dipake buat wireless hacking. Tools ini penting banget buat lu kuasain, karena kalo lu kaga ngerti tools itu fungsinya buat apa dan cara makenya gimana, ntar lu bakal bingung sendiri pas prakteknya sama hasilnya juga kaga maksimal.
-
 ## Tools Buat WEP & WPA/WPA2-PSK
 
 ### 1. Aircrack-NG Suite
@@ -276,7 +274,3 @@ John the Ripper atau yang biasa disingkat `jtr` adalah tool yang fungsinya kuran
 </div>
 
 Kismet itu tool CLI yang dipake buat mantau jaringan Wi-Fi. Bahasa kerennya, tool ini dipake sebagai WIDS (Wireless Intrusion Detection System). Tugasnya buat ngescan jaringan, ngecek apakah ada yang nyerang, aktivitas yang aneh, atau hal-hal yang mencurigakan yang ada di jaringan Wi-Fi. Kismet juga selain CLI dia bisa dipake lewat UI (diakses lewat browser).
-
-## Kesimpulan
-
-Jadi intinya, tools-tools yang udah dibahas tadi itu adalah senjata utama lu dalam wireless hacking. Lu kaga harus langsung jago semua, yang penting paham fungsi, alur, sama kapan tools itu dipake. Mulai aja dari yang dasar, kuasain satu-satu, baru ke tools berikutnya. Inget, wireless hacking itu bukan soal banyak-banyakan tools, tapi seberapa paham lu make tools itu dengan bener dan bertanggung jawab. Kalo fondasinya udah kuat, praktek ke depannya bakal jauh lebih gampang dan hasilnya juga bakalan maksimal.
