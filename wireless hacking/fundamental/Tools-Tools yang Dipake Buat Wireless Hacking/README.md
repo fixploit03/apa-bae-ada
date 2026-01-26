@@ -5,7 +5,7 @@
 ### 1. Aircrack-NG Suite
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/aircrack.jpg" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/aircrack.jpg" />
 </div>
 
 Aircrack-NG Suite adalah sekumpulan tools CLI yang dipake buat ngecrack kunci (password) Wi-Fi WEP sama WPA/WPA2-PSK. Teknik yang dipake sama Aircrack-NG buat ngecracknya, dia pake Dictionry attack (wordlist).
@@ -22,7 +22,7 @@ Tools yang wajib lu kuasai:
 ### 2. Cowpatty
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/cowpatty.jpg" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/cowpatty.jpg" />
 </div>
 
 Cowpatty adalah tool CLI yang dipake buat ngecrack kunci Wi-Fi (WPA/WPA2-PSK).
@@ -45,7 +45,7 @@ Pre-computed PMK adalah teknik di mana kita ngitung PMK dari awal dan hasilnya d
 ### 3. Hcxdumptool
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/hcxdumptool.png" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/hcxdumptool.png" />
 </div>
 
 Hcxdumptool adalah tool CLI yang dipake buat capture PMKID. Biasanya tool ini sepaket sama Hcxtools sama Hashcat, jadi abis PMKID nya dapet, bisa langsung lanjut ke proses cracking.
@@ -53,7 +53,7 @@ Hcxdumptool adalah tool CLI yang dipake buat capture PMKID. Biasanya tool ini se
 ### 4. Hcxtools
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/hcxtools.png" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/hcxtools.png" />
 </div>
 
 Hcxtools adalah tools CLI yang di pake buat ngubah handshake kalo kaga PMKID ke format hash yang bisa dicrack sama tool Hashcat kalo kaga sama John the Ripper.
@@ -61,7 +61,7 @@ Hcxtools adalah tools CLI yang di pake buat ngubah handshake kalo kaga PMKID ke 
 ### 5. Bettercap
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/bettercap.png" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/bettercap.png" />
 </div>
 
 Bettercap adalah tool framework CLI yang dipake khusus buat serangan MITM. Bettercap juga ada modul Wi-Fi yang bisa dipake buat nyerang Wi-Fi.
@@ -75,7 +75,7 @@ Yang bisa dilakuin sama Bettercap:
 ### 6. Airgorah
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/airgorah.png" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/airgorah.png" />
 </div>
 
 Airgorah adalah tool GUI yang fungsinya kurang lebih sama kaya Aircrack-NG, buat ngecrack kunci Wi-Fi (WPA/WPA2-PSK). Cuma bedanya di tampilannya aja. Kalo Aircrack-NG kan full CLI, kalo Airgorah dia pake GUI.
@@ -88,7 +88,7 @@ Airgorah adalah tool GUI yang fungsinya kurang lebih sama kaya Aircrack-NG, buat
 ### 1. Hostapd-WPE
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/hostapdwpe.png" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/hostapdwpe.png" />
 </div>
 
 Hostapd-WPE adalah versi modifnya dari Hostapd yang dipake buat ngejalanin Evil Twin Attack di jaringan WPA/WPA2-Enterprise. Tool ini bikin AP palsu (Rogue AP) yang nyamar jadi jaringan asli, terus nangkep kredensial korban pas korban nyoba konek.
@@ -96,7 +96,7 @@ Hostapd-WPE adalah versi modifnya dari Hostapd yang dipake buat ngejalanin Evil 
 ### 2. Hostapd-Mana
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/hostapdmana.png" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/hostapdmana.png" />
 </div>
 
 Hostapd-Mana itu versi Hostapd yang lebih lanjut dibandingin yang versi WPE. Tool ini punya fitur tambahan buat manipulasi EAP, downgrade authentication, sama bypass konfigurasi tertentu.
@@ -104,7 +104,7 @@ Hostapd-Mana itu versi Hostapd yang lebih lanjut dibandingin yang versi WPE. Too
 ### 3. Asleap
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/asleap.jpeg" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/asleap.jpeg" />
 </div>
 
 Asleap adalah tool CLI yang dipake buat ngecrack LEAP authentication (Cisco LEAP). Ini protokol lama yang udah deprecated (kaga kepake), tapi kadang masih kepake di jaringan enterprise jadul.
@@ -112,7 +112,7 @@ Asleap adalah tool CLI yang dipake buat ngecrack LEAP authentication (Cisco LEAP
 ### 4. EAPMD5pass
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/eapmd5pass.png" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/eapmd5pass.png" />
 </div>
 
 EAPMD5pass adalah tool CLI yang dipake buat ngecrack EAP-MD5.
@@ -120,7 +120,7 @@ EAPMD5pass adalah tool CLI yang dipake buat ngecrack EAP-MD5.
 ### 5. EAPHammer
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/eaphammer.png" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/eaphammer.png" />
 </div>
 
 EAPHammer adalah tool framework CLI yang dipake buat ngetes jaringan Wi-Fi WPA/WPA2-Enterprise. Tool ini jadi favorit pentester enterprise karena otomatis, powerful, sama support banyak skenario serangan.
@@ -130,7 +130,7 @@ EAPHammer adalah tool framework CLI yang dipake buat ngetes jaringan Wi-Fi WPA/W
 ### 1. Reaver
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/reaver.jpeg" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/reaver.jpeg" />
 </div>
 
 Reaver adalah tool CLI yang dipake buat ngebrute force PIN WPS, tujuan buat ngecrack kunci Wi-Fi. Tool ini sering dipake kalo WPS AP target nyala.
@@ -138,7 +138,7 @@ Reaver adalah tool CLI yang dipake buat ngebrute force PIN WPS, tujuan buat ngec
 ### 2. Bully
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/bully.jpg" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/bully.jpg" />
 </div>
 
 Bully adalah tool CLI yang fungsinya kurang lebih sama kaya tool Reaver.
@@ -146,7 +146,7 @@ Bully adalah tool CLI yang fungsinya kurang lebih sama kaya tool Reaver.
 ### 3. PixieWPS
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/pixiewps.png" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/pixiewps.png" />
 </div>
 
 PixieWPS adalah tool CLI yang dipake buat ngejalanin Pixie Dust Attack, yaitu serangan ke WPS yang manfaatin kelemahan implementasi PIN di sisi AP. Biasanya serangan ini kepake ke AP yang udah tua atau firmware nya kaga diupdate, apalagi yang make chipset `Ralink` kalo kaga `Broadcom`. Tujuannya buat nebak PIN WPS AP target.
@@ -156,7 +156,7 @@ PixieWPS adalah tool CLI yang dipake buat ngejalanin Pixie Dust Attack, yaitu se
 ### 1. Hostapd
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/hostapd.png" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/hostapd.png" />
 </div>
 
 Hostapd adalah tool CLI paling dasar yang dipake buat ngebikin AP palsu (Rogue AP). Biasanya tool ini dikombinasiin sama Evil Twin Attack buat dapetin kredensial korban.
@@ -164,7 +164,7 @@ Hostapd adalah tool CLI paling dasar yang dipake buat ngebikin AP palsu (Rogue A
 ### 2. Wifiphisher
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/wifiphisher.png" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/wifiphisher.png" />
 </div>
 
 Wifiphisher adalah tool CLI yang dipake buat ngejalanin Evil Twin Attack, di mana tujuannya buat dapetin data korban lewat teknik soceng (social engineering ). Data yang ditargetin bisa macem-macem, kaya password Wi-Fi sampe akun sosmed. Intinya, tool ini dipake buat mancing korban supaya masukin data penting ke halaman palsu (captive portal), dan dari situ penyerang bisa ngedapetin semua data yang korban masukin.
@@ -172,7 +172,7 @@ Wifiphisher adalah tool CLI yang dipake buat ngejalanin Evil Twin Attack, di man
 ### 3. Fluxion
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/fluxion.jpg" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/fluxion.jpg" />
 </div>
 
 Fluxion adalah tool CLI yang fungsinya kurang lebih sama kaya tool Wifiphisher, cuma beda di cara makenya sama tampilannya aja. Kalo buat tujuannya, tetep sama.
@@ -184,7 +184,7 @@ Tools All in One tools apaan bang? jadi tools All in One itu tools yang ngegampa
 ### 1. Fern Wi-Fi Cracker
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/fern.jpg" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/fern.jpg" />
 </div>
 
 Fern Wi-Fi Cracker adalah tool GUI yang dipake buat ngecrack kunci Wi-Fi WEP sama WPA/WPA2-PSK.
@@ -201,7 +201,7 @@ Tool ini cocok buat lu yang kaga terlalu ini sama terminal.
 ### 2. Wifite
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/wifite.png" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/wifite.png" />
 </div>
 
 Wifite adalah tool CLI otomatis yang dipake dipake buat ngecrack kunci Wi-Fi WEP sama WPA/WPA2-PSK. Teknik yang dipake kurang lebih sama kaya yang ada di tool Fern Wi-Fi Cracker.
@@ -209,7 +209,7 @@ Wifite adalah tool CLI otomatis yang dipake dipake buat ngecrack kunci Wi-Fi WEP
 ### 3. Airgeddon
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/airgeddon.png" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/airgeddon.png" />
 </div>
 
 Airgeddon adalah rajanya tool framework CLI buat ngecrack kunci Wi-Fi. dia ngedukung macem-macem jenis Wi-Fi, mulai dari WEP, WPA/WPA-PSK, WPA/WPA-Enterprise bahkan sampe WPA3. Airgeddon juga ada fitur buat ngejalanin serangan Evil Twin, rata-rata orang lebih suka make Airgeddon ketimbang pake tool Aircrack murni. Soalnya lebih gampang buat dipakenya dari pada harus ngetik satu-satu perintah secara manual.
@@ -222,7 +222,7 @@ Airgeddon adalah rajanya tool framework CLI buat ngecrack kunci Wi-Fi. dia ngedu
 ### 1. iw
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/iw.jpg" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/iw.jpg" />
 </div>
 
 iw adalah tool CLI bawaan Linux yang dipake buat ngatur sama ngecek interface wireless. Biasanya dipake buat ngecek mode Wi-Fi, ganti channel, ngecek kualitas sinyal, sampe ngelihat informasi AP yang ada di sekitar. Tool ini sering dipake barengan sama tools lain buat wireless hacking.
@@ -230,7 +230,7 @@ iw adalah tool CLI bawaan Linux yang dipake buat ngatur sama ngecek interface wi
 ### 2. macchanger
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/macchanger.png" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/macchanger.png" />
 </div>
 
 macchanger adalah tool CLI yang dipake buat spoof MAC address. Tujunya biar lu kaga gampang ketauan.
@@ -238,7 +238,7 @@ macchanger adalah tool CLI yang dipake buat spoof MAC address. Tujunya biar lu k
 ### 3. MDK3
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/mdk3.png" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/mdk3.png" />
 </div>
 
 MDK3 adalah tool CLI yang dipake buat ngejalanin macem-macem jenis serangan di jaringan Wi-Fi.
@@ -246,7 +246,7 @@ MDK3 adalah tool CLI yang dipake buat ngejalanin macem-macem jenis serangan di j
 ### 4. MDK4
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/mdk4.png" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/mdk4.png" />
 </div>
 
 MDK4 adalah tool CLI yang merupakan pengembangan dari MDK3. Fungsinya kurang lebih sama aja, tapi ada fitur-fitur baru yang kaga ada di MDK3.
@@ -254,7 +254,7 @@ MDK4 adalah tool CLI yang merupakan pengembangan dari MDK3. Fungsinya kurang leb
 ### 5. Hashcat
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/hashcat.jpg" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/hashcat.jpg" />
 </div>
 
 Hashcat adalah tool CLI yang dipake buat ngecrack berbagai jenis format hash. Tool ini biasanya sepaket sama Hcxdumptool sama Hcxtools.
@@ -262,7 +262,7 @@ Hashcat adalah tool CLI yang dipake buat ngecrack berbagai jenis format hash. To
 ### 6. John the Ripper
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/john.png" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/john.png" />
 </div>
 
 John the Ripper atau yang biasa disingkat `jtr` adalah tool yang fungsinya kurang lebih sama kaya Hashcat, yaitu buat ngecrack berbagai jenis format hash. Bedanya, Hashcat itu performanya paling maksimal kalo dijalanin pake GPU, sedangkan John the Ripper lebih fleksibel karena bisa jalan optimal pake CPU, walaupun sekarang juga udah ada yang support pake GPU di versi jumbo.
@@ -270,7 +270,7 @@ John the Ripper atau yang biasa disingkat `jtr` adalah tool yang fungsinya kuran
 ### 7. Kismet
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/kismet.png" />
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking/img/kismet.png" />
 </div>
 
 Kismet itu tool CLI yang dipake buat mantau jaringan Wi-Fi. Bahasa kerennya, tool ini dipake sebagai WIDS (Wireless Intrusion Detection System). Tugasnya buat ngescan jaringan, ngecek apakah ada yang nyerang, aktivitas yang aneh, atau hal-hal yang mencurigakan yang ada di jaringan Wi-Fi. Kismet juga selain CLI dia bisa dipake lewat UI (diakses lewat browser).
