@@ -223,29 +223,57 @@ Airgeddon adalah rajanya tool framework CLI buat ngecrack kunci Wi-Fi. dia ngedu
 
 ### 1. iw
 
+<div align="center">
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/iw.jpg" />
+</div>
+
 iw adalah tool CLI bawaan Linux yang dipake buat ngatur sama ngecek interface wireless. Biasanya dipake buat ngecek mode Wi-Fi, ganti channel, ngecek kualitas sinyal, sampe ngelihat informasi AP yang ada di sekitar. Tool ini sering dipake barengan sama tools lain buat wireless hacking.
 
 ### 2. macchanger
+
+<div align="center">
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/macchanger.png" />
+</div>
 
 macchanger adalah tool CLI yang dipake buat spoof MAC address. Tujunya biar lu kaga gampang ketauan.
 
 ### 3. MDK3
 
+<div align="center">
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/mdk3.png" />
+</div>
+
 MDK3 adalah tool CLI yang dipake buat ngejalanin macem-macem jenis serangan di jaringan Wi-Fi.
 
 ### 4. MDK4
+
+<div align="center">
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/mdk4.png" />
+</div>
 
 MDK4 adalah tool CLI yang merupakan pengembangan dari MDK3. Fungsinya kurang lebih sama aja, tapi ada fitur-fitur baru yang kaga ada di MDK3.
 
 ### 5. Hashcat
 
+<div align="center">
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/hashcat.jpg" />
+</div>
+
 Hashcat adalah tool CLI yang dipake buat ngecrack berbagai jenis format hash. Tool ini biasanya sepaket sama Hcxdumptool sama Hcxtools.
 
 ### 6. John the Ripper
 
+<div align="center">
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/john.png" />
+</div>
+
 John the Ripper atau yang biasa disingkat `jtr` adalah tool yang fungsinya kurang lebih sama kaya Hashcat, yaitu buat ngecrack berbagai jenis format hash. Bedanya, Hashcat itu performanya paling maksimal kalo dijalanin pake GPU, sedangkan John the Ripper lebih fleksibel karena bisa jalan optimal pake CPU, walaupun sekarang juga udah ada yang support pake GPU di versi jumbo.
 
 ### 7. Kismet
+
+<div align="center">
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/tools/img/kismet.png" />
+</div>
 
 Kismet itu tool CLI yang dipake buat mantau jaringan Wi-Fi. Bahasa kerennya, tool ini dipake sebagai WIDS (Wireless Intrusion Detection System). Tugasnya buat ngescan jaringan, ngecek apakah ada yang nyerang, aktivitas yang aneh, atau hal-hal yang mencurigakan yang ada di jaringan Wi-Fi. Kismet juga selain CLI dia bisa dipake lewat UI (diakses lewat browser).
 
