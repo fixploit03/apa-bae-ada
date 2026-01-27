@@ -7,7 +7,7 @@ ada apa bae
   - [Ubuntu Server 24.04.3](https://github.com/fixploit03/apa-bae-ada/tree/main/instal%20os/ubuntu%20server)
 - [Wireless Hacking](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking)
   - [Fundamental](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental)
-    - [Pendahuluan](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/pendahuluan)
+    - [Pendahuluan](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/Pendahuluan)
     - [Apa Itu Wi-Fi?](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/apa%20itu%20wifi)
     - [Komponen Jaringan Wi-Fi](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/Komponen%20Jaringan%20Wi-Fi)
     - [Standar Wi‑Fi (IEEE 802.11)](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/Standar%20Wi%E2%80%91Fi%20(IEEE%20802.11))
