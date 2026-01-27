@@ -1,18 +1,18 @@
 # Handshake & Proses Koneksi Wi-Fi
 
 ## Apa Itu Handshake di Wi-Fi?
-Handshake itu ibarat jabat tangan virtual antara HP lu sama router Wi-Fi sebelum bener-bener bisa internetan. 
+Handshake di Wi-Fi itu proses salam-salaman antara client sama AP sebelum koneksi bener-bener dijalanin.
 
-Prosesnya:
-- Client sama AP tukeran pesen
-- Buat bikin koneksi yang aman
-- Sebelom data beneran dikirim
+> Bisa dibilang, ini kayak proses cek identitas biar kedua pihak yakin “iya, gue kenal lu, lu aman buat konek ke gue”.
 
-Di Wi-Fi, handshake yang paling penting namanya **4-Way Handshake** yang dipake buat autentikasi sama enkripsi.
+Di Wi-Fi, handshake yang paling penting itu namanya 4-Way Handshake, dipake buat cek password sama bikin kunci enkripsi biar koneksi aman.
 
----
+## Apa Itu 4-Way Handshake?
+4-Way Handshake adalah proses salam‑salaman empat langkah di keamanan Wi‑Fi (WPA/WPA2/WPA3) yang dipake buat ngebuktiin kalo client sama AP punya kunci yang sama dan bikin kunci enkripsi baru.
 
-## Komponen di 4-Way Handshake
+Proses ini bikin client sama AP bisa komunikasi aman tanpa ngirim password langsung di udara, sekaligus ngasilin PTK (Pairwise Transient Key) buat ngenkripsi data biar kaga bisa disadap atau diutak‑atik orang.
+
+## Komponen-Komponen di 4-Way Handshake
 
 ### 1. Passphrase (Password Wi-Fi)
 Ini bahan paling dasar buat ngitung PMK.
@@ -101,7 +101,7 @@ Ciri-cirinya:
 - Dienkripsi pake KEK supaya GTK kaga bisa disadap di udara
 - Ada di Message 3
 
-## Gambaran Alur Komponen
+## Gambaran Proses 4-Way Handshake
 
 ```
 Password + SSID
@@ -117,9 +117,6 @@ KCK   KEK   TK
 MIC   GTK  Enkripsi Data
 ```
 
-## Apa Itu 4-Way Handshake?
-4-Way Handshake adalah proses konek sama ngebikin kunci enkripsi antara AP sama client pas pertama kali nyambung ke jaringan Wi-Fi (WPA/WPA2/WPA3-Personal).
-
 ## Tahapan 4-Way Handshake
 
 <div align="center">
@@ -127,13 +124,23 @@ MIC   GTK  Enkripsi Data
 </div>
 
 ### 1. Message 1 (AP ke Client)
+
+<div align="center">
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Handshake%20%26%20Proses%20Koneksi%20Wi-Fi/img/m1.png" width="50%"/>
+</div>
+
 Di tahap awal ini AP udah punya PMK, terus dia:
 - Bikin ANonce
 - Ngirim ANonce ke client.
 
 ### 2. Message 2 (Client ke AP)
+
+<div align="center">
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Handshake%20%26%20Proses%20Koneksi%20Wi-Fi/img/m2.png" width="50%"/>
+</div>
+
 Client nerima ANonce dari AP, terus dia:
-1. Ngitung PMK
+1. Pake PMK yang udah dia punya sebelumnya
 2. Bikin SNonce
 3. Ngitung PTK 
 4. Ngitung MIC
@@ -143,9 +150,13 @@ Client nerima ANonce dari AP, terus dia:
 > Client ngirim MIC buat ngebuktiin ke AP kalo dia punya PMK yang bener, yang artinya password Wi-Fi yang dia pake itu bener, karena PMK dapetnya dari password Wi-Fi sama SSID.
 
 ### 3. Message 3 (AP ke Client)
+
+<div align="center">
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Handshake%20%26%20Proses%20Koneksi%20Wi-Fi/img/m3.png" width="50%"/>
+</div>
+
 AP nerima SNonce dari client, terus dia:
 - Ngitung PTK
-- Bikin GTK
 - Ngecek MIC yang dikirim sama client
 
 Kalo MIC nya bener:
@@ -155,6 +166,11 @@ Kalo MIC nya bener:
   - MIC
 
 ### 4. Message 4 (Client ke AP)
+
+<div align="center">
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Handshake%20%26%20Proses%20Koneksi%20Wi-Fi/img/m4.png" width="50%"/>
+</div>
+
 Client:
 - Nerima GTK dari AP
 - Ngecek MIC dari AP
