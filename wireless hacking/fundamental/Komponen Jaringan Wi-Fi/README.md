@@ -1,4 +1,4 @@
-Di materi ini, gw bakal bahas tentang komponen jaringan di Wi-Fi, apa aja komponennya, penjelasannya, sama kegunaanya bakal apaan di jaringan Wi-Fi.
+Di materi ini, gw bakal bahas komponen jaringan di Wi-Fi, mulai dari penjelasannya, apa aja komponennya, sama kegunaannya buat apa di jaringan Wi-Fi.
 
 # Komponen Jaringan Wi-Fi
 
