@@ -1,5 +1,9 @@
 # Standar Wi‑Fi (IEEE 802.11)
 
+<div align="center">
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Standar%20Wi%E2%80%91Fi%20(IEEE%20802.11)/img/standar.jpg" />
+</div>
+
 ## Apa Itu Standar Wi‑Fi?
 Standar Wi-Fi adalah jenis-jenis aturan teknis yang dibikin sama [IEEE](https://www.ieee.org/) (Institute of Electrical and Electronics Engineers) pake kode `802.11` buat ngatur gimana caranya perangkat-perangkat Wi-Fi bisa saling ngobrol sama kehubung satu sama lain.
 
