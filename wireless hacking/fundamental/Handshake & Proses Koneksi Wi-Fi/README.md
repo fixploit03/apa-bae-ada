@@ -1,11 +1,4 @@
-# Handshake & Proses Koneksi Wi-Fi
-
-## Apa Itu Handshake di Wi-Fi?
-Handshake di Wi-Fi itu proses salam-salaman antara client sama AP sebelum koneksi bener-bener dijalanin.
-
-> Bisa dibilang, ini kayak proses cek identitas biar kedua pihak yakin “iya, gue kenal lu, lu aman buat konek ke gue”.
-
-Di Wi-Fi, handshake yang paling penting itu namanya 4-Way Handshake, dipake buat cek password sama bikin kunci enkripsi biar koneksi aman.
+# 4-Way Handshake
 
 ## Apa Itu 4-Way Handshake?
 4-Way Handshake adalah proses ngobrol empat langkah antara perangkat lu (kaya HP, laptop, dll) sama AP buat ngejamin koneksi aman. Intinya, ini cara Wi-Fi buat masang kunci enkripsi tanpa harus ngirim password lu secara langsung di udara.
@@ -42,7 +35,7 @@ PMK (Pairwise Master Key) adalah kunci utama yang jadi bahan dasar buat ngitung 
 > PMK kaga dipake buat ngenkripsi data, yang dipake buat ngenkripsi data itu kunci turunannya.
 
 Cara ngitung PMK:
-- PMK dihasilin dari password Wi-Fi yang digabungin sama SSID
+- PMK dihasilin dari password Wi-Fi yang digabungin sama SSID (buat WPA/WPA2‑PSK)
 - Terus diproses secara kriptografi pake:
   - Fungsi: PBKDF2-HMAC-SHA1
   - 4096 iterasi
@@ -52,6 +45,14 @@ Ciri-cirinya:
 - PMK jadi kunci inti di proses 4-Way Handshake
 - PMK dipake bareng ANonce sama SNonce buat ngitung PTK
 - PMK kaga pernah dikirim lewat udara, cuma diitung di sisi AP sama client
+
+> [!NOTE]
+> **Khusus WPA/WPA2/WPA3‑Enterprise:** PMK kaga langsung dihasilin dari password Wi‑Fi sama SSID kaya di mode PSK. Di mode Enterprise, PMK dihasilin dari proses EAP (Extensible Authentication Protocol) lewat server RADIUS, yang biasanya pake:
+> - Username sama password
+> - Sertifikat digital
+> - Kalo kaga kombinasi keduanya
+>
+> Abis proses EAP kelar sama client dinyatakan valid, baru ngebentuk PMK, terus dipake lanjut ke 4‑Way Handshake buat ngitung PTK.
 
 ### 4. Nonce
 Nonce adalah angka acak yang dipake di proses 4-Way Handshake buat ngebantu ngebentuk kunci enkripsi, biar tiap koneksi Wi-Fi hasilnya beda-beda sama kaga bisa direplay (dipake ulang).
@@ -87,7 +88,7 @@ MIC (Message Integrity Check) adalah hasil ngitung kriptografi yang dipake buat 
 
 Ciri-cirinya:
 - Diitung pake KCK
-- Dipake buat ngebuktiin password yang dipake itu bener
+- Dipake buat ngebuktiin kalo client punya PMK yang bener
 - Ada di Message 2
 - Ada di Message 3
 
@@ -159,9 +160,10 @@ AP nerima SNonce dari client, terus dia:
 
 Kalo MIC nya bener:
 - Artinya password yang dipake sama client itu bener
-- AP lanjut ngirim:
-  - GTK (yang udah diencrypt)
-  - MIC
+- AP lanjut:
+  - Ngirim GTK (yang udah diencrypt)
+  - Ngirim MIC
+  - Ngasih tau client buat nginstal kunci.
 
 ### 4. Message 4 (Client ke AP)
 
