@@ -1,3 +1,5 @@
+Di materi ini, gw bakal ngebahas Wi-Fi, mulai dari penjelasannya, cara kerjanya, kelebihannya, sama kekurangannya.
+
 # Apa Itu Wi-Fi?
 
 <div align="center">
