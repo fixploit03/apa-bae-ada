@@ -1,7 +1,9 @@
 # Standar Wi‑Fi (IEEE 802.11)
 
 ## Apa Itu Standar Wi‑Fi?
-Standar Wi-Fi adalah seperangkat aturan teknis yang dibuat sama [IEEE](https://www.ieee.org/) (Institute of Electrical and Electronics Engineers) dengan kode 802.11 buat ngatur gimana caranya perangkat-perangkat nirkabel bisa saling ngobrol sama kehubung satu sama lain. Standar ini nentuin hal-hal penting kayak frekuensi radio yang dipake (kaya 2.4 GHz apa 5 GHz), seberapa cepet data bisa dikirim, seberapa luas jangkauan sinyalnya, sampe sistem keamanan yang dipasang buat ngelindungin jaringan.
+Standar Wi-Fi adalah jenis-jenis aturan teknis yang dibikin sama [IEEE](https://www.ieee.org/) (Institute of Electrical and Electronics Engineers) pake kode `802.11` buat ngatur gimana caranya perangkat-perangkat Wi-Fi bisa saling ngobrol sama kehubung satu sama lain.
+
+Standar ini nentuin hal-hal penting kayak frekuensi radio yang dipake (kaya 2.4 GHz apa 5 GHz), seberapa kenceng data bisa dikirim, seberapa jauh jangkauan sinyalnya, sampe sistem keamanan yang dipake buat ngelindungin jaringan.
 
 ## Jeni-Jenis Standar‑Standar Wi‑Fi (IEEE 802.11)
 
