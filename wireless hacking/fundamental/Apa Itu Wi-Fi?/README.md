@@ -1,4 +1,9 @@
 # Apa Itu Wi-Fi?
+
+<div align="center">
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Apa%20Itu%20Wi-Fi%3F/img/wifi.svg" width="50%"/>
+</div>
+
 Wi-Fi adalah teknologi jaringan yang kaga pake kabel yang dipake buat nyambungin perangkat client (kaya HP, laptop, dll) ke internet atau ke jaringan lokal (LAN).
 
 ## Cara Kerja Wi-Fi
