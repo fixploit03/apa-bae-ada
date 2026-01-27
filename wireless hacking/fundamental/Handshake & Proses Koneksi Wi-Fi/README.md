@@ -8,9 +8,7 @@ Handshake di Wi-Fi itu proses salam-salaman antara client sama AP sebelum koneks
 Di Wi-Fi, handshake yang paling penting itu namanya 4-Way Handshake, dipake buat cek password sama bikin kunci enkripsi biar koneksi aman.
 
 ## Apa Itu 4-Way Handshake?
-4-Way Handshake adalah proses salam‑salaman empat langkah di keamanan Wi‑Fi (WPA/WPA2/WPA3) yang dipake buat ngebuktiin kalo client sama AP punya kunci yang sama dan bikin kunci enkripsi baru.
-
-Proses ini bikin client sama AP bisa komunikasi aman tanpa ngirim password langsung di udara, sekaligus ngasilin PTK (Pairwise Transient Key) buat ngenkripsi data biar kaga bisa disadap atau diutak‑atik orang.
+4-Way Handshake adalah proses ngobrol empat langkah antara perangkat lu (kaya HP, laptop, dll) sama AP buat ngejamin koneksi aman. Intinya, ini cara Wi-Fi buat masang kunci enkripsi tanpa harus ngirim password lu secara langsung di udara.
 
 ## Komponen-Komponen di 4-Way Handshake
 
@@ -194,7 +192,7 @@ Potensi Kelemahan:
 - Rentan sama KRACK attack (Key Reinstallation Attack) kalo firmwarenya kaga diupdate
 - Deauth attack buat dapetin handshake
 
-## Kesimpulan
+## Intinya
 4-Way Handshake itu proses yang paling penting buat keamanan Wi-Fi. 
 
 Proses ini buat mastiin:
