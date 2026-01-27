@@ -33,6 +33,11 @@ Makanya:
 > Bagen passwordnya sama, kalo SSID nya beda maka bakal ngehasilin PMK yang beda.
 
 ### 3. PMK
+
+<div align="center">
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Handshake%20%26%20Proses%20Koneksi%20Wi-Fi/img/pmk.png" width="50%"/>
+</div>
+
 PMK (Pairwise Master Key) adalah kunci utama yang jadi bahan dasar buat ngitung kunci-kunci turunan yang lain di jaringan Wi-Fi, khususnya di proses 4-Way Handshake.
 
 > [!NOTE]
