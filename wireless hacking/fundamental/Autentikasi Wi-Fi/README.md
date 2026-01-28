@@ -2,6 +2,10 @@ Di materi ini, gw bakal ngebahas tentang autentikasi Wi-Fi.
 
 # Autentikasi Wi-Fi
 
+<div align="center">
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Autentikasi%20Wi-Fi/img/proses.png" width="50%"/>
+</div>
+
 ## Apa Itu Autentikasi Wi-Fi?
 Autentikasi Wi-Fi adalah proses buat ngebuktiin identitas antara client sama AP sebelon koneksi bener-bener dijalanin.
 
