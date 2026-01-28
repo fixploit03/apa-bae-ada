@@ -1,49 +1,52 @@
+Di materi ini, gw bakal ngebahas tahapan-tahapan wireless hacking.
+
 # Tahapan-Tahapan Wireless Hacking
 
 ## 1. Reconnaissance (Ngumpulin Info)
-Ini proses paling awal di wireless hacking, lu harus ngumpulin informasi dulu sebanyak-banyaknya tentang target yang mau lu serang:
+Ini tahapan yang paling awal di wireless hacking, lu harus ngumpulin informasi dulu sebanyak mungkin tentang target yang mau lu serang.
 
-Yang dilakuin:
-- Ngescan Wi-Fi yang ada di sekitar lu pake tools kaya Airodump-NG, Kismet, dll
-- Nyatet semua info penting kaya SSID (nama Wi-Fi), MAC address, channel yang dipake, jenis enkripsi yang dipake (WEP, WPA, WPA2, WPA3)
-- Nyari tau AP mana yang gampang dijebol (vulnerable)
+Yang dilakuin bisa:
+- Ngescan Wi-Fi yang ada di sekitar lu
+- Nyatet semua info penting kaya:
+  - SSID
+  - BSSID
+  - Channel yang dipake
+  - Jenis enkripsi yang dipake
+- Nyari tau AP mana yang gampang buat dibobol (vulnerable)
 
-## 2. Scanning (Ngintip)
-Nah abis lu tau target mana yang mau lu diserang, lu kudu ngescan lebih dalem lagi:
+## 2. Gaining Access (Dapetin Akses)
+Ini tahapan yang paling penting di wireless hacking, ada beberapa cara yang bisa lu pake:
 
-Yang dilakuin:
-- Mantau paket data yang dikirim sama yang diterima
-- Nyari tau ada berapa banyak client yang konek sama AP
-- Nganalisis pola traffic sama kelemahan yang ada. (kaya make Open kalo kaga WEP)
+### 1. Buat Ngebobol WEP
+- Tangkep IVs sebanyak mungkin (kira-kira `40000`-`80000` IVs)
+- Crack kunci WEP make tool `aircrack-ng`
 
-## 3. Gaining Access (Dapetin Akses)
-Ini tahapan yang paling penting, ada beberapa cara yang biasanya dipake:
+> [!NOTE]
+> Berhubung WEP udah bapuk, jadi kalo IVs nya yang lu tangkep itu banyak, persentase buat dapetin passwordnya `95%` ke atas.
 
-### 1. Buat bobol WEP
-- Capture IVs sebanyak-banyaknya (kira-kira `40000`-`80000` IVs)
-- Crack kunci WEP
+### 2. Buat Ngebobol WPA/WPA2-PSK
+- Tangkep 4-Way Handshake
+- Crack kunci WPA/WPA2-PSK make tool `aircrack-ng`
 
-Berhubung WEP udah bapuk, jadi kalo IVs nya yang dicapture banyak, persentase buat dapet passwordnya `95%` ke atas.
+> [!NOTE]
+> Kalo WPA/WPA2-PSK kaga boleh lu samain sama WEP, kalo WPA/WPA2-PSK itu tergantung dari password yang dipake sama Wi-Fi target, kalo password yang dipake rada susah. Kemungkinan buat dapet passwordnya ge rada-rada.
 
-### 2. Buat Bobol WPA/WPA2-PSK
-- Capture 4-way handshake antara client sama AP
-- Bisa digabungin sama serangan deauth buat maksa client reconnect
-- Crack kunci WPA/WPA2-PSK pake serangan brute force kalo kaga pake dictionary attack
+## 3. Verification (Ngecek)
+Kalo lu udah berhasil ngedapetin itu password Wi-Fi, lu harus ngecek passwordnya itu bener apa kaga.
 
-Kalo WPA/WPA2-PSK kaga boleh disamain sama WEP, kalo WPA/WPA2-PSK itu tergantung password dari Wi-Fi target, kalo passwordnya rada susah. Kemungkinan buat dapet passwordnya ge rada-rada.
-
-## 4. Verification (Ngecek Akses)
-Kalo lu udah dapet passwordnya, lu harus ngecek passwordnya bener apa kaga.
-
-Yang dilakuin:
-- Ngetes koneksi ke Wi-Fi pake password yang udah lu dapet
-- Pastiin lu bisa ngakses internet kalo kaga jaringan internal
+Yang dilakuin bisa:
+- Ngetes koneksi ke Wi-Fi make password yang udah lu dapet
+- Pastiin lu bisa ngakses internet kalo kaga jaringan internalnya
 - Ngecek IP address yang lu dapet
 - Ngetes akses ke gateway (router)
 
-## 5.  Maintaining Access (Jaga Akses)
-Kalo lu udah bisa masuk, lu kudu jaga akesnya biar nanti lu bisa konek lagi kapan aja.
+## 4.  Maintaining Access (Ngejaga Akses)
+Kalo lu udah bisa masuk ke jaringan itu, lu kudu ngejaga akses lu biar nanti lu bisa konek lagi ke jaringan itu kapan aja.
 
-Yang dilakuin:
+Yang dilakuin bisa:
 - Nginstal backdoor (pintu belakang)
 - Ngubah setingan router
+
+## Kesimpulan
+
+Intinya, wireless hacking itu ada prosesnya, kaga ujug-ujug lu bisa masuk ke jaringan yang lu mau. Kalo urutannya kaga sesuai, hasilnya juga kaga bakal maksimal.
