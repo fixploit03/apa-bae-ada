@@ -17,7 +17,7 @@ ada apa bae
     - [Autentikasi Wi-Fi](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/Autentikasi%20Wi-Fi)
     - [4-Way Handshake](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/4-Way%20Handshake)
     - [Apa Itu Wireless Hacking?](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/Apa%20Itu%20Wireless%20Hacking%3F)
-    - [Jenis‑Jenis Serangan di Jaringan Wi‑Fi](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/Jenis%E2%80%91Jenis%20Serangan%20di%20Jaringan%20Wi%E2%80%91Fi)
+    - [Jenis-Jenis Serangan Umum di Jaringan Wi-Fi](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/Jenis%E2%80%91Jenis%20Serangan%20di%20Jaringan%20Wi%E2%80%91Fi)
     - [Tahapan-Tahapan Wireless Hacking](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/Tahapan-Tahapan%20Wireless%20Hacking)
     - [Tools-Tools yang Dipake Buat Wireless Hacking](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/fundamental/Tools-Tools%20yang%20Dipake%20Buat%20Wireless%20Hacking)
   - [Setup LAB](https://github.com/fixploit03/apa-bae-ada/tree/main/wireless%20hacking/setup%20lab)
