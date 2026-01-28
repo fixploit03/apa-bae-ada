@@ -1,157 +1,33 @@
-# Jenis‑Jenis Serangan di Jaringan Wi‑Fi
+Di materi ini, gw bakal ngebahas tentang jenis-jenis serangan umum yang ada di jaringan Wi-Fi.
 
-## 1. Sniffing (Nguping)
-Sniffing itu ibarat lu nguping orang yang lagi ngobrol, tapi versinya jaringan.
+# Jenis-Jenis Serangan Umum di Jaringan Wi-Fi
 
-Penyerang:
-- Nangkep paket data yang lewat di udara
-- Ngeliat trafik antara client sama AP
-- kalo jaringan lemah, data bisa disadap
+## 1. Sniffing
+Sniffing itu ibaratnya lu lagi nguping orang yang lagi ngobrol, tapi versinya jaringan. Tujuannya buat ngumpulin info atau bahan yang dipake buat serangan selanjutnya.
 
-Biasanya kejadian di:
-- Wi‑Fi open/kaga pake password
-- Enkripsinya lemah
+Yang jadi target Sniffing:
+- Informasi target
+- Paket data
+- IVs
+- 4-Way Handshake
 
-Tujuannya:
-- Ngumpulin informasi
-- Bukan langsung ngerusak
+## 2. Deauthentication Attack
+Deauthentication Attack adalah jenis serangan yang dipake buat nendang client dari Wi-Fi. Caranya dia ngirim frame deauth palsu seolah-olah dari client. Biasanya serangan ini dipake buat mancing handshake.
 
-## 2. Deauthentication Attack (Nendang Client)
-Ini serangan yang sering bikin orang pada kesel.
+## 3. Brute Force
+Brute Force adalah jenis serangan yang dipake buat ngecrack kunci Wi-Fi (WPA/WPA2-PSK). Caranya dia nebak-nebak make kombinasi tertentu (kaya huruf kecil, huruf besar, angka sama simbol).
 
-Yang kejadian:
-- Client tiba‑tiba keputus dari Wi‑Fi
-- Padahal sinyalnya full
-- Disambungin lagi, eh keputus lagi
+## 4. Dictionary Attack
+Dictionary Attack adalah jenis serangan yang dipake buat ngecrack kunci Wi-Fi (WPA/WPA2-PSK). Caranya dia ngeload wordlist (file `.txt` yang isinya sekumpulan password) yang mau dicoba.
 
-Ngapa itu bisa kejadian?
+## 5. Evil Twin Attack
+Evil Twin Attack adalah jenis serangan yang dipake buat ngebikin Rogue AP (AP palsu) yang namanya sama persis kaya AP asli. Tujuannya biar client salah konek ke AP palsu yang dibikin sama lu, jadi semua data yang dikirim sama client bisa lu liat.
 
-Karena Wi‑Fi punya sistem management frame yang bisa dipalsuin.
+## 6. Man-in-the-Middle (MITM)
+Man-in-the-Middle (MITM) adalah jenis serangan yang dipake buat nempatin perangkat lu di antara 2 perangkat. Tujuannya supaya target nganggep perangkat lu sebagai perangkat yang dia tuju, jadi semua data yang tadinya diarahin ke perangkat yang dia tuju malahan diarahin ke perangkat lu.
 
-Tujuannya:
-- Maksa buat client reconnect (konek ulang)
-- Buat nangkep handshake (dipake buat ngecrack password Wi-Fi)
+## 7. Denial of Service (DoS)
+Denial of Service (DoS) adalah jenis serangan yang dipake buat ngebikin jaringan Wi-Fi jadi keos. Contohnya kaya sinyal jadi lemot, client kaga bisa konek ke AP. Intinya serangan ini tujuannya buat ngeganggu.
 
-## 3. Handshake Capture Attack
-Ini bukan serangan ngerusak, tapi ngumpulin bahan (bahan apatuh).
-
-Yang dicari:
-- 4‑Way Handshake
-- Dipake buat ngecrack password Wi‑Fi secara offline
-
-Catetan penting:
-- Kaga ujug-ujug langsung dapet password Wi-Fi nya
-- Cuma dapet kunci buat dites (password nya bener apa kaga)
-
-Biasanya serangan ini dibarengin sama serangan deauth.
-
-## 4. PMKID Attack
-Nah ini serangan yang rada licik tapi elegan. PMKID Attack itu serangan buat dapetin bahan crack password Wi‑Fi,
-tanpa perlu ada client yang konek.
-
-Bedanya sama handshake biasa:
-- Handshake biasa: butuh client terus client itu dideauth terus nangkep 4‑way handshake
-- PMKID Attack: kaga perlu client sama sekali
-
-Yang dilakuin:
-- Penyerang ngobrol langsung sama AP
-- AP ngasih PMKID
-- PMKID yang dikasih bisa dipake buat ngecrack password Wi-Fi secara offline
-
-Catetan penting:
-- Tetep kaga langsung dapet password Wi-Fi nya
-- Masih harus dicrack pake wordlist kalo kaga pake brute force
-- Cuma bahannya aja dapetnya lebih cepet dibandingin sama handshake biasa
-
-Biasanya kejadian di:
-- Wi‑Fi yang pake WPA/WPA2‑PSK
-- Router jadul atau setingan router yang keamanannya lemah
-
-Kelebihannya:
-- Kagak perlu nendang client
-- Kagak berisik
-- Lebih stealth (kaga gampang ketauan)
-
-Kekurangannya:
-- Kaga semua AP rentan
-- Router baru banyak yang udah nutup celah ini
-
-Ibaratnya: Lu kaga perlu kunci rumah buat ngebobol itu rumah, lu ngintip ke bawah keset, eh malah nemu kunci serep.
-
-## 5. Brute Force/Dictionary Attack
-Ini serangan tujuannya buat nebak password.
-
-Cara kerjanya:
-- Nyoba password satu‑satu
-- Bisa pake wordlist (kamus)
-- Bisa juga full brute force
-
-Targetnya:
-- Wi‑Fi yang pake password lemah
-- Passwordnya pendek
-- Passwordnya pasaran
-
-Biasanya serangan ini kepake kalo passwordnya kaya `12345678`, `udinpetot123`, `dadangdidingdudung`.
-
-## 6. WPS Attack
-Ini nyerang fitur WPS (Wi‑Fi Protected Setup).
-
-Masalah WPS:
-- Make PIN 8 digit
-- PIN bisa ditebak
-- Kebanyakan router masih ngaktifin WPS
-
-Akibatnya:
-- Password Wi‑Fi bisa ketauan
-- Bagen passwordnya susah alias ribet
-
-## 7. Evil Twin Attack
-Ini serangan yang paling licik.
-
-Yang dilakuin:
-- Penyerang bikin Wi‑Fi palsu
-- Namanya sama persis kayak Wi‑Fi asli
-- Korban nyambung ke AP palsu
-
-Dampaknya:
-- Korban masukin password
-- Penyerang ngintip trafik
-- Penyerang bisa nyolong akun korban
-
-Ibaratnya: Lu beli pertamax ga taunya isinya pertalit.
-
-## 8. Rogue AP (Access Point)
-Kaya Evil Twin, tapi biasanya:
-- Dipasang di dalem jaringan
-- Tanpa izin admin
-
-Tujuannya:
-- Monitoring user
-- Bypass keamanan
-- Jadi pintu masuk penyerang
-
-## 9. Man‑in‑the‑Middle (MITM)
-Penyerang jadi orang ketiga di tengah komunikasi. (gampangnya jadi pelakor dah)
-
-Yang bisa dilakuin:
-- Ngintip data
-- Ngubah data
-- Redirect (ngalihin) ke website palsu
-
-Biasanya kejadian di:
-- Wi‑Fi publik
-- Wi‑Fi yang kaga pake enkripsi kuat
-
-
-## 10. Denial of Service (DoS)
-Tujuannya cuma satu: bikin Wi‑Fi kaga bisa dipake.
-
-Cara kerjanya:
-- Flood paket (ngebanjirin paket)
-- Spam request
-- Ganggu channel
-
-Dampaknya:
-- Jaringan jadi lemot
-- Client kaga bisa connect
-- AP nya jadi ngecrash
+## Kesimpulan
+Intinya, serangan-serangan di atas itu serangan yang paling sering dipake di wireless hacking. Lu kudu paham cara kerjanya biar bisa ngamanin jaringan Wi-Fi lu dari serangan-serangan modelan kaya gitu.
