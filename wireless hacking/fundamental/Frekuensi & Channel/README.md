@@ -1,31 +1,37 @@
+Di materi ini, gw bakal ngebahas tentang frekuensi sama channel, mulai dari penjelasannya sampe jenis-jenisnya.
+
 # Frekuensi & Channel
 
-## 1. Frekuensi
-Wi‑Fi itu jalan pake gelombang radio, bukan kabel. Nah gelombang ini jalan di frekuensi tertentu.
+## 1. Apa Itu Frekuensi?
+Frekuensi adalah jalan gelombang radio yang dipake sama Wi-Fi buat ngirim sekaligus nerima data lewat udara. Di Wi-Fi biasanya ada frekuensi 2.4 GHz, 5 GHz, sama 6 GHz, tiap frekuensi punya karakternya masing-masing, mulai dari jangkauan sinyalnya, speednya, sampe seberapa tahan dia sama interferensi (gangguan).
 
-### Frekuensi yang dipake Wi‑Fi
-| Frekuensi	| Enaknya | Kagaknya | Dipake di |
-|:--:|:--:|:--:|:--:|
-| 2.4 GHz	| Jangkauannya jauh, bisa nembus tembok	| Rame, banyak gangguan	| 802.11b/g/n |
-| 5 GHz	| Cepet, jarang gangguan | Jangkauannya kaga jauh	| 802.11a/n/ac/ax |
-| 6 GHz	| Super ngebut, bersih | Barangnya masih dikit | Wi‑Fi 6E |
+### Jenis-Jenis Frekuensi yang Dipake Wi-Fi
+- **2.4 GHz**
+  - **Kelebihan:** Sinyalnya jauh, tembok masih bisa ditembus
+  - **Kekurangan:** Rame, banyak yang make, gangguan di mana-mana (kaya Bluetooth, microwave, Wi-Fi tetangga)
+  - **Dipake:** Wi-Fi 4
+- **5 GHz**
+  - **Kelebihan:** Kenceng, sinyalnya lebih bersih, jarang kena gangguan
+  - **Kekurangan:** Sinyalnya kaga jauh, susah buat nembus tembok
+  - **Dipake:** Wi-Fi 5
+- **6 GHz**
+  - **Kelebihan:** Sipaling kenceng, masih sepi (belon banyak yang make), channelnya lebar
+  - **Kekurangan:** Barangnya masih dikit, jaraknya paling pendek
+  - **Dipake:** Wi-Fi 6E
 
-## 2. Channel
-Channel itu jalur di dalam frekuensi.
+## 2. Apa Itu Channel
+Channel adalah jalan kecil di dalem satu frekuensi yang dipake buat misahin sinyal antar Wi-Fi biar kaga pada saling tubrukan, tiap channel punya nomornya masing-masing.
 
-Ibarat jalan raya:
-- Frekuensi = jalan tol
-- Channel = nomer jalan
+> Intinya, kalo frekuensi itu jalan tol, channel tuh nomor jalan tol, kaya jalan 1, jalan 2, sampe jalan-jalan.
 
-Biar AP satu sama AP yang lain kaga tabrakan sinyalnya.
+## Jenis-Jenis Channel yang Dipake Wi-Fi
 
 ### 1. Channel 2.4 GHz
-- Rentangnya dari 2.400 sampe 2.4835 GHz
-- Ada 14 channel (Indonesia umumnya 1–13)
-- Channelnya saling tumpang tindih
+- Rentang: 2400-2483.5 MHz
+- Total Channel: 14
 
 > [!NOTE]
-> **Channel yang kaga tabrakan:** 1, 6, 11
+> Channel di 2.4 GHz, channelnya pada saling tubrukan, channel yang kaga tubrukan channel `1`, `6`, sama `11`.
 
 ### Tabel Channel 2.4 GHz
 
@@ -46,11 +52,15 @@ Biar AP satu sama AP yang lain kaga tabrakan sinyalnya.
 | 13 | 2472 |
 | 14 | 2484 |
 
+> [!NOTE]
+> Di Indonesia, channel yang biasanya kepake cuma channel 1–13.
+
 ### 2. Channel 5 GHz
-Nah kalo ini beda kelas.
-- Channelnya banyak
-- Hampir kaga pernah overlap
-- Ngebutnya bukan maen
+- Rentang: 5150-5850 MHz
+- Total channel: Seabrek (banyak)
+
+> [!NOTE]
+> Channel di 5 GHz jarang pada tubrukan, soalnya jarak tiap channelnya lebih gede, jadi sinyalnya lebih sepi sama lebih stabil, tapi jangkauannya kaga sejauh kaya yang di channel 2.4 GHz.
 
 ### Tabel Channel 5 GHz
 
@@ -81,13 +91,11 @@ Nah kalo ini beda kelas.
 | 161	| 5805 |
 | 165	| 5825 |
 
-## Hubungan Frekuensi & Channel
-- Frekuensi = wilayah sinyal
-- Channel = jalur di wilayah itu
-- AP itu cuma nongkrong di 1 channel doang
-- Lu mau:
-  - sniff paket, lu harus di channel yang sama
-  - deauth, channel lu kudu bener
-  - Evil Twin, channel lu kudu sama persis
+> [!NOTE]
+> Channel DFS (dari channel 52-140) kadang suka dipake sama radar cuaca kalo kaga sama radar militer. Jadi kalo router lu ngedeteksi ada radar, dia bakal otomatis ngalah sama pindah channel ke channel yang lain (kaya channel 36–48).
 
-Salah channel = lu kayak kerja rodi, capek iya, hasilnya kaga ada.
+## Kesimpulan
+
+Intinya:
+- Frekuensi: jalan
+- Channel: nomer jalan
