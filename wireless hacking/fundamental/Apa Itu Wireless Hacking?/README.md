@@ -1,17 +1,23 @@
+Di materi ini, gw bakal ngebahas tentang wireless hacking.
+
 # Apa Itu Wireless Hacking?
-Wireless hacking adalah kegiatan buat ngetes, nganalisis sama ngeksploitasi celah yang ada di jaringan Wi-Fi, tujuannya buat kita tau seaman apa itu jaringan, apakah bisa dibobol apa kaga. Di dunia keamanan siber, wireless hacking dilakuin secara legal, biasanya bagian dari pentest (penetration testing) kalo kaga ethical hacking, bukan buat ngebobol Wi-Fi orang sembarangan atau buat hal-hal yang ilegal.
+Wireless hacking adalah kegiatan buat lu ngetes, nganalisis, sama ngeksploitasi celah yang ada di jaringan Wi-Fi lu. Tujuannya buat apa? Tujuannya adalah buat lu tau seaman apa jaringan lu sama apakah jaringan lu bisa dibobol apa kaga, sebelum ada orang lain yang ngebobol duluan.
 
 ## Tujuan Wireless Hacking
-- Biar kita tau celah keamanan Wi-Fi yang masih kebuka
-- Ngetes sekuat apa enkripsi yang dipake
-- Ngecek konfigurasi AP udah aman apa masih berantakan
-- Buat edukasi sama ningkatin defensive security biar jaringan makin aman
+- Biar lu tau celah apa aja yang masih kebuka
+- Ngetes jenis enkripsi yang lu pake
+- Ngecek konfigurasi AP
 
 ## Apa Aja yang Dianalisis?
-Wireless hacking fokus ke protokol [IEEE 802.11](https://en.wikipedia.org/wiki/IEEE_802.11), yang dianalisis contohnya:
+Wireless hacking fokus di protokol [IEEE 802.11](https://onnocenter.or.id/wiki/index.php/Protokol_IEEE_802.11). Yang dianalisis contohnya kaya:
 - Access Point (AP)
-- Client/Station (device yang konek sama AP)
+- Client/Station
 - Handshake
 - Paket data
 - Manajemen frame (beacon, auth, assoc, dll)
 - Kualitas sinyal (PWR)
+- dll
+
+## Kesimpulan
+
+Intinya, wireless hacking itu cara awal lu buat ngamanin Wi-Fi lu sebelum Wi-Fi lu digondol maling.
