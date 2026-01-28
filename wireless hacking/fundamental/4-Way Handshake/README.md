@@ -1,7 +1,7 @@
 # 4-Way Handshake
 
 ## Apa Itu 4-Way Handshake?
-4-Way Handshake adalah proses ngobrol empat langkah antara perangkat lu (kaya HP, laptop, dll) sama AP buat ngejamin koneksi aman. Intinya, ini cara Wi-Fi buat masang kunci enkripsi tanpa harus ngirim password lu secara langsung di udara.
+4-Way Handshake adalah proses tuker-tukeran 4 paket (frame) antara client sama AP yang kejadi pas waktu client mau konek ke Wi-Fi WPA/WPA2/WPA3. Tujuannya buat ngecek kalo client punya password yang bener sama buat ngebikin kunci enkripsi buat ngamanin komunikasi antara client sama AP.
 
 ## Komponen-Komponen di 4-Way Handshake
 
@@ -14,7 +14,7 @@ Ini bahan paling dasar buat ngitung PMK.
 > - Hex: 64 karakter
 
 ### 2. SSID (Nama Wi-Fi)
-SSID juga dipake buat jadi bahan ngitung PMK.
+SSID juga dipake buat dijadiin bahan buat ngitung PMK.
 
 Fungsi SSID:
 - Dipake sebagai salt di proses kriptografi
@@ -29,30 +29,44 @@ Makanya:
   <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Handshake%20%26%20Proses%20Koneksi%20Wi-Fi/img/pmk.png" width="50%"/>
 </div>
 
-PMK (Pairwise Master Key) adalah kunci utama yang jadi bahan dasar buat ngitung kunci-kunci turunan yang lain di jaringan Wi-Fi, khususnya di proses 4-Way Handshake.
+PMK (Pairwise Master Key) adalah kunci utama yang jadi bahan dasar buat ngitung kunci-kunci turunan yang lain yang ada di jaringan Wi-Fi, khususnya di proses 4-Way Handshake.
 
 > [!NOTE]
-> PMK kaga dipake buat ngenkripsi data, yang dipake buat ngenkripsi data itu kunci turunannya.
+> - PMK kaga dipake buat ngenkripsi data, yang dipake buat ngenkripsi data itu kunci turunannya.
+> - Tiap jenis Wi-Fi cara bikinnya beda-beda.
 
-Cara ngitung PMK:
-- PMK dihasilin dari password Wi-Fi yang digabungin sama SSID (buat WPA/WPA2‑PSK)
+#### Cara Ngitung PMK Wi-Fi WPA/WPA2-PSK
+
+Rumus:
+
+```
+PMK = PBKDF2(HMAC−SHA1, PSK, SSID, 4096, 256)
+```
+
+Keterangan:
+- PMK dihasilin dari password Wi-Fi (PSK) yang digabungin sama SSID
 - Terus diproses secara kriptografi pake:
   - Fungsi: PBKDF2-HMAC-SHA1
-  - 4096 iterasi
-  - Outputnya 256-bit (32 byte)
+  - Password: PSK (Pre-Shared Key/password Wi-Fi)
+  - Salt: SSID (nama Wi-Fi)
+  - Iterasi: 4096 kali
+  - Output: 256 bit (32 byte)
 
-Ciri-cirinya:
-- PMK jadi kunci inti di proses 4-Way Handshake
-- PMK dipake bareng ANonce sama SNonce buat ngitung PTK
-- PMK kaga pernah dikirim lewat udara, cuma diitung di sisi AP sama client
+#### Cara Ngitung PMK Wi-Fi WPA/WPA2-Enterprise
+
+Rumus:
+
+```
+PMK = MSK[0..255 bit]
+```
+
+Keterangan:
+- PMK dihasilin dari MSK (Master Session Key) yang didapet dari proses autentikasi EAP ke server RADIUS
+- PMK adalah 256 bit (32 byte) pertama dari MSK
+- MSK didapet dari hasil autentikasi EAP (EA-PEAP, EAP-TTLS, EAP-TLS, dll)
 
 > [!NOTE]
-> **Khusus WPA/WPA2/WPA3‑Enterprise:** PMK kaga langsung dihasilin dari password Wi‑Fi sama SSID kaya di mode PSK. Di mode Enterprise, PMK dihasilin dari proses EAP (Extensible Authentication Protocol) lewat server RADIUS, yang biasanya pake:
-> - Username sama password
-> - Sertifikat digital
-> - Kalo kaga kombinasi keduanya
->
-> Abis proses EAP kelar sama client dinyatakan valid, baru ngebentuk PMK, terus dipake lanjut ke 4‑Way Handshake buat ngitung PTK.
+> PMK kaga pernah dikirim di udara, cuma diitung di sisi AP sama client.
 
 ### 4. Nonce
 Nonce adalah angka acak yang dipake di proses 4-Way Handshake buat ngebantu ngebentuk kunci enkripsi, biar tiap koneksi Wi-Fi hasilnya beda-beda sama kaga bisa direplay (dipake ulang).
@@ -61,44 +75,65 @@ Di Wi-Fi ada dua macem Nonce:
 - ANonce (Authenticator Nonce): angka acak yang dibikin sama AP
 - SNonce (Station Nonce): angka acak yang dibikin sama client (STA)
 
-Ciri-cirinya:
-- Nonce sifatnya unik (beda-beda) di tiap koneksi
-- Nonce dipake bareng sama PMK buat ngitung PTK
-- ANonce ada di Message 1
-- SNonce ada di Message 2
-
 ### 5. PTK
-
 PTK (Pairwise Transient Key) adalah kunci sementara yang dipake buat ngamanin komunikasi unicast antara client sama AP di jaringan Wi-Fi. PTK ini dipake buat ngenkripsi data user abis proses 4-Way Handshake kelar.
 
-Ciri-cirinya:
-- PTK diitung dari:
-  - PMK
-  - ANonce
-  - SNonce
-  - MAC address AP
-  - MAC address client
-- PTK dibagi jadi beberapa kunci:
-  - KCK: buat ngitung MIC, ngecek data handshake masih asli apa kaga
-  - KEK: buat ngamanin GTK pas GTK dikirim dari AP ke client
-  - TK: buat ngenkripsi data unicast antara client sama AP
+> [!NOTE]
+> Rumus buat ngitung PTK di Wi-Fi WPA/WPA2-PSK sama WPA/WPA2-Enterprise itu sama aja, yang beda cuma pas di cara ngitung PMK nya.
+
+#### Cara Ngitung PTK
+
+Rumus:
+
+```
+PTK = PRF(PMK, "Pairwise key expansion", Min(AP_MAC, Client_MAC) || Max(AP_MAC, Client_MAC) || Min(ANonce, SNonce) || Max(ANonce, SNonce))
+```
+
+Keterangan:
+- Fungsi: PRF (Pseudo-Random Function)
+- Input:
+  - `PMK`: Pairwise Master Key
+  - `Label`: "Pairwise key expansion"
+  - `AP_MAC`: MAC address AP
+  - `Client_MAC`: MAC address client
+  - `ANonce`: Angka acak yang dikirim sama AP
+  - `SNonce`: Angka acak yang dikirim sama client
+- Output PTK:
+  - TKIP: 512 bit (64 byte)
+  - CCMP: 384 bit (48 byte)
+
+#### Kunci Turunan PTK
+
+PTK dibagi jadi beberapa kunci:
+
+<div align="center">
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Handshake%20%26%20Proses%20Koneksi%20Wi-Fi/img/pmk.png" width="50%"/>
+</div>
+
+1. **KCK (Key Confirmation Key)**
+   - Ukuran Kunci: 128 bit (16 byte)
+   - Fungsi: buat ngitung MIC, ngecek data handshake masih asli apa kaga
+2. **KEK (Key Encryption Key)**
+   - Ukuran Kunci: 128 bit (16 byte)
+   - Fungsi: buat ngamanin GTK pas GTK dikirim dari AP ke client
+4. **TK (Temporal Key)**
+   - Ukuran Kunci:
+     - TKIP: 256-bit (32 byte)
+     - CCMP: 128-bit (16 byte)
+   - Fungsi: buat ngenkripsi data unicast antara client sama AP
+
+**Total PTK:**
+- CCMP: 384-bit (48 byte) = KCK + KEK + TK
+- TKIP: 512-bit (64 byte) = KCK + KEK + TK + MIC keys
+
+> [!NOTE]
+> PTK sifatnya unik per sesi sama dibikin ulang setiap kali client reconnect.
 
 ### 6. MIC 
 MIC (Message Integrity Check) adalah hasil ngitung kriptografi yang dipake buat ngecek data di proses 4-Way Handshake masih asli apa kaga, biar data yang dikirim kaga bisa diubah di tengah jalan.
 
-Ciri-cirinya:
-- Diitung pake KCK
-- Dipake buat ngebuktiin kalo client punya PMK yang bener
-- Ada di Message 2
-- Ada di Message 3
-
 ### 7. GTK
 GTK (Group Temporal Key) adalah kunci yang dipake buat ngenkripsi traffic broadcast (data ke semua client) sama multicast (data ke beberapa client) di jaringan Wi-Fi, kaya ARP, DHCP, sama mDNS, yang dikirim dari AP ke banyak client sekaligus.
-
-Ciri-cirinya:
-- Sama buat semua client yang kehubung ke satu AP
-- Dienkripsi pake KEK supaya GTK kaga bisa disadap di udara
-- Ada di Message 3
 
 ## Gambaran Proses 4-Way Handshake
 
