@@ -1,4 +1,4 @@
-Di materi ini, gw bakal ngebahas tools-tools yang dipake buat wireless hacking, mulai dari penjelasannya sampe jenis-jenisnya.
+Di materi ini, gw bakal ngebahas tools-tools yang dipake buat wireless hacking.
 
 # Tools-Tools yang Dipake Buat Wireless Hacking
 
@@ -19,7 +19,7 @@ Tools yang ada di Aircrack-NG Suite:
 - `airdecloak-ng`: Tool buat ngebuang frame WEP yang cloaked (frame yang disembunyiin) dari file capture.
 - `aireplay-ng`: Tool buat ngejalanin macem-macem jenis serangan Wi-Fi.
 - `airmon-ng`: Tool buat ngontrol interface wireless (enable/disable monitor mode).
-- `airodump-ng`: Tool buat nyecan sama nangkep paket (kaya IVs sama handshake).
+- `airodump-ng`: Tool buat ngescan sama nangkep paket (kaya IVs sama handshake).
 - `airodump-ng-oui-update`: Tool buat ngeupdate list IEEE OUI (vendor MAC address) yang dipake sama tool `airodump-ng`.
 - `airolib-ng`: Tool buat ngebikin sama ngelola tabel PMK.
 - `airserv-ng`: Tool buat ngeshare (bagi) interface wireless ke perangkat yang lain make jaringan.
@@ -90,7 +90,7 @@ Hcxtools adalah tool CLI yang di pake buat ngubah hasil capture dari tool Hcxdum
 Bettercap adalah tool framework CLI yang dipake khusus buat serangan MITM. Bettercap juga punya modul Wi-Fi yang bisa dipake buat ngetes keamanan Wi-Fi.
 
 Yang bisa dilakuin sama Bettercap:
-- Nyecan Wi-Fi
+- Ngescan Wi-Fi
 - Nangkep handshake
 - Nangkep PMKID
 - Ngebikin Rogue AP
