@@ -1,4 +1,4 @@
-Di materi ini, gw bakal ngebahas tahapan-tahapan wireless hacking.
+Di materi ini, gw bakal ngebahas tentang tahapan-tahapan wireless hacking.
 
 # Tahapan-Tahapan Wireless Hacking
 
