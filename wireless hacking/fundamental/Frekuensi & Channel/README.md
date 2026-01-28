@@ -2,6 +2,10 @@ Di materi ini, gw bakal ngebahas tentang frekuensi sama channel, mulai dari penj
 
 # Frekuensi & Channel
 
+<div align="center">
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Frekuensi%20%26%20Channel/img/frekuensi.png" width="50%"/>
+</div>
+
 ## 1. Apa Itu Frekuensi?
 Frekuensi adalah jalan gelombang radio yang dipake sama Wi-Fi buat ngirim sekaligus nerima data lewat udara. Di Wi-Fi biasanya ada frekuensi 2.4 GHz, 5 GHz, sama 6 GHz, tiap frekuensi punya karakternya masing-masing, mulai dari jangkauan sinyalnya, speednya, sampe seberapa tahan dia sama interferensi (gangguan).
 
