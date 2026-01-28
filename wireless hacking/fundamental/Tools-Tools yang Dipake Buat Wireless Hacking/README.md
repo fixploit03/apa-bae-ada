@@ -1,4 +1,4 @@
-Di materi ini, gw bakal ngebahas tools-tools yang dipake buat wireless hacking.
+Di materi ini, gw bakal ngebahas tentang tools-tools yang dipake buat wireless hacking.
 
 # Tools-Tools yang Dipake Buat Wireless Hacking
 
