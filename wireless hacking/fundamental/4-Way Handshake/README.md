@@ -1,7 +1,9 @@
+Di materi ini, gw bakal ngebahas tentang 4-Way Handshake.
+
 # 4-Way Handshake
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Handshake%20%26%20Proses%20Koneksi%20Wi-Fi/img/handshake.png" width="50%"/>
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/4-Way%20Handshake/img/tangan.png" width="50%"/>
 </div>
 
 ## Apa Itu 4-Way Handshake?
@@ -9,7 +11,7 @@
 
 ## Tujuan 4-Way Handshake
 - Buat ngecek kalo client punya password yang bener
-- Buat ngebikin kunci enkripsi buat ngamanin komunikasi antara client sama AP.
+- Buat ngebikin kunci enkripsi buat ngamanin komunikasi antara client sama AP
 
 ## Komponen-Komponen di 4-Way Handshake
 
@@ -29,15 +31,20 @@ Fungsi SSID:
 - Bikin PMK yang unik (beda-beda) buat tiap jaringan
 
 Makanya:
-> Bagen passwordnya sama, kalo SSID nya beda maka bakal ngehasilin PMK yang beda.
+> Bagen passwordnya sama, kalo SSID nya beda maka bakal ngehasilin PMK yang beda juga.
 
 ### 3. PMK
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Handshake%20%26%20Proses%20Koneksi%20Wi-Fi/img/pmk.png" width="50%"/>
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/4-Way%20Handshake/img/pmk.png" width="50%"/>
 </div>
 
 PMK (Pairwise Master Key) adalah kunci inti yang jadi bahan dasar buat ngitung kunci-kunci turunan yang lain.
+
+> [!NOTE]
+> - PMK kaga dipake buat ngenkripsi data, yang dipake buat ngenkripsi data itu kunci turunannya.
+> - Tiap jenis Wi-Fi cara bikinnya beda-beda.
+> - PMK kaga pernah dikirim di udara, cuma diitung di sisi AP sama client.
 
 #### Rumus Ngitung PMK Wi-Fi WPA/WPA2-PSK
 
@@ -46,7 +53,8 @@ PMK = PBKDF2(HMAC−SHA1, PSK, SSID, 4096, 256)
 ```
 
 Keterangan:
-- `PBKDF2-HMAC-SHA1`: Fungsi kriptografi yang dipake
+- `PBKDF2`: Fungsi kriptografi yang dipake
+- `HMAC−SHA1`: Algoritma hash yang dipake
 - `PSK`: Password Wi-Fi
 - `SSID`: Nama Wi-Fi
 - `4096`: Jumlah iterasi (proses ngulang)
@@ -59,13 +67,8 @@ PMK = MSK[0..255 bit]
 ```
 
 Keterangan:
-- `MSK`: Master Session Key yang dihasilin dari proses autentikasi EAP (EAP-PEAP, EAP-TTLS- EAP-TLS)
+- `MSK`: Master Session Key yang dihasilin dari proses autentikasi EAP (EAP-PEAP, EAP-TTLS, EAP-TLS)
 - `0..255 bit` : Hasil output PMK 256 bit pertama dari MSK
-
-> [!NOTE]
-> - PMK kaga dipake buat ngenkripsi data, yang dipake buat ngenkripsi data itu kunci turunannya.
-> - Tiap jenis Wi-Fi cara bikinnya beda-beda.
-> - PMK kaga pernah dikirim di udara, cuma diitung di sisi AP sama client.
 
 ### 4. Nonce
 Nonce adalah angka acak yang dipake di proses 4-Way Handshake buat ngebantu ngebentuk kunci enkripsi yang lain.
@@ -80,9 +83,7 @@ PTK (Pairwise Transient Key) adalah kunci turunan dari PMK yang dipake buat ngam
 > [!NOTE]
 > Rumus buat ngitung PTK di Wi-Fi WPA/WPA2-PSK sama WPA/WPA2-Enterprise itu sama aja, yang beda cuma pas di cara ngitung PMK nya aja.
 
-#### Cara Ngitung PTK
-
-Rumus:
+#### Rumus Ngitung PTK
 
 ```
 PTK = PRF(PMK, "Pairwise key expansion", Min(AP_MAC, Client_MAC) || Max(AP_MAC, Client_MAC) || Min(ANonce, SNonce) || Max(ANonce, SNonce))
@@ -92,11 +93,17 @@ Keterangan:
 - `PRF (Pseudo-Random Function)`: Fungsi kriptografi yang dipake
 - `PMK`: Hasil ngitung PMK
 - `"Pairwise key expansion"`: Label yang dipake buat jadi bahan input fungsi PRF
-- `Min(AP_MAC, Client_MAC)`: MAC address AP yang nilainya lebih kecil dari MAC address client
-- `Max(AP_MAC, Client_MAC)`: MAC address client yang nilainya lebih gede dari MAC address AP
-- `Min(ANonce, SNonce)`: Nonce dari AP kalo kaga dari client yang nilainya lebih kecil
-- `Max(ANonce, SNonce)`: Nonce dari AP kalo kaga dari client yang nilainya lebih gede
-  
+- `Min(AP_MAC, Client_MAC)`: MAC address yang nilainya lebih kecil (bisa dari AP atau client)
+- `Max(AP_MAC, Client_MAC)`: MAC address yang nilainya lebih gede (bisa dari AP atau client)
+- `Min(ANonce, SNonce)`: Nonce yang nilainya lebih kecil (bisa dari ANonce atau SNonce)
+- `Max(ANonce, SNonce)`: Nonce yang nilainya lebih gede (bisa dari ANonce atau SNonce)
+
+> [!NOTE]
+> - Cara buat nentuin mana yang lebih gede mana yang lebih kecil itu diliat dari nilai hex nya.
+> - Caranya: dibandingin byte per byte dari kiri ke kanan.
+> - Contoh: `00:11:22:33:44:55` lebih kecil dari `AA:BB:CC:DD:EE:FF` soalnya byte pertamamya `00` < `AA`.
+
+
 #### Kunci Turunan PTK
 
 PTK dibagi jadi beberapa kunci:
@@ -111,10 +118,10 @@ PTK dibagi jadi beberapa kunci:
 2. **KEK (Key Encryption Key)**
    - Ukuran Kunci: 128 bit
    - Fungsi: buat ngamanin GTK pas GTK dikirim dari AP ke client
-4. **TK (Temporal Key)**
+3. **TK (Temporal Key)**
    - Ukuran Kunci: 128 bit
    - Fungsi: buat ngenkripsi data unicast antara client sama AP
-5. **MIC keys**
+4. **MIC keys**
    - Ukuran Kunci: 128 bit
    - Fungsi: buat ngamanin paket data di TKIP
 
@@ -127,6 +134,19 @@ PTK dibagi jadi beberapa kunci:
 
 ### 6. MIC 
 MIC (Message Integrity Check) adalah hasil ngitung proses kriptografi yang dipake buat ngecek data di proses 4-Way Handshake masih asli apa kaga, biar data yang dikirim kaga bisa diubah di tengah jalan.
+
+#### Rumus Ngitung MIC
+
+```
+MIC = HMAC-SHA1(KCK, Data_Paket_Handshake)
+```
+
+Keterangan:
+- `HMAC-SHA1`: Algoritma hash yang dipake
+- `KCK`: Kunci KCK (128 bit pertama dari PTK)
+- `Data_Paket_Handshake`: Frame EAPOL-Key (yang udah MIC nya di zero kan)
+- `Output`: 160 bit (20 byte)
+- `MIC`: 128 bit pertama dari output
 
 ### 7. GTK
 GTK (Group Temporal Key) adalah kunci yang dipake buat ngenkripsi traffic broadcast (data ke semua client) sama multicast (data ke beberapa client) di jaringan Wi-Fi, kaya ARP, DHCP, sama mDNS, yang dikirim dari AP ke banyak client sekaligus.
@@ -149,15 +169,22 @@ MIC   GTK  Enkripsi Data
 
 ## Tahapan 4-Way Handshake
 
+<div align="center">
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/4-Way%20Handshake/img/handshake.png" width="50%"/>
+</div>
+
 ### 1. Message 1 (AP ke Client)
 
 <div align="center">
   <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Handshake%20%26%20Proses%20Koneksi%20Wi-Fi/img/m1.png" width="50%"/>
 </div>
 
-Di tahap awal ini AP udah punya PMK, terus dia:
+Di tahap awal ini AP:
 - Bikin ANonce
 - Ngirim ANonce ke client.
+
+> [!NOTE]
+> Tujuan AP ngirim ANonce ke client adalah buat ngebantu client ngebikin kunci enkripsi yang lain.
 
 ### 2. Message 2 (Client ke AP)
 
@@ -166,14 +193,13 @@ Di tahap awal ini AP udah punya PMK, terus dia:
 </div>
 
 Client nerima ANonce dari AP, terus dia:
-1. Pake PMK yang udah dia punya sebelumnya
-2. Bikin SNonce
-3. Ngitung PTK 
-4. Ngitung MIC
-5. Ngirim SNonce sama MIC ke AP
+1. Bikin SNonce
+2. Ngitung PTK 
+3. Ngitung MIC
+4. Ngirim SNonce sama MIC ke AP
 
 > [!NOTE]
-> Client ngirim MIC buat ngebuktiin ke AP kalo dia punya PMK yang bener, yang artinya password Wi-Fi yang dia pake itu bener, karena PMK dapetnya dari password Wi-Fi sama SSID.
+> Tujuan client ngirim MIC ke AP adalah buat ngebuktiin kalo dia punya PMK yang bener.
 
 ### 3. Message 3 (AP ke Client)
 
@@ -186,11 +212,14 @@ AP nerima SNonce dari client, terus dia:
 - Ngecek MIC yang dikirim sama client
 
 Kalo MIC nya bener:
-- Artinya password yang dipake sama client itu bener
+- Artinya password yang dipake sama client bener
 - AP lanjut:
-  - Ngirim GTK (yang udah diencrypt)
+  - Ngirim GTK (yang udah keenkripsi)
   - Ngirim MIC
-  - Ngasih tau client buat nginstal kunci.
+  - Ngasih tau client buat nginstal kunci
+
+> [!NOTE]
+> Tujuan AP ngirim GTK sama MIC ke client adalah buat nyegah data yang dikirim di udara biar kaga bisa disadap atau dimodifikasi.
 
 ### 4. Message 4 (Client ke AP)
 
@@ -198,7 +227,7 @@ Kalo MIC nya bener:
   <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Handshake%20%26%20Proses%20Koneksi%20Wi-Fi/img/m4.png" width="50%"/>
 </div>
 
-Client:
+Abis itu client:
 - Nerima GTK dari AP
 - Ngecek MIC dari AP
 - Nginstal PTK sama GTK
@@ -210,21 +239,21 @@ Kalo semuanya bener:
 > Abis ACK dikirim sama client, AP jadi tau kalo client udah kelar nginstal PTK sama GTK, terus koneksinya udah siap dipake buat komunikasi yang aman (keenkripsi).
 
 ## Keamanan 4-Way Handshake
-Kelebihan:
-- Kaga ada transmisi password secara langsung di udara
+**Kelebihan:**
+- Password kaga dikirim langsung lewat udara
 - PTK sifatnya unik buat tiap sesi
 - MIC buat mastiin keaslian data
-- Nyegah replay attack pake nonce (angka acak)
+- Nyegah replay attack pake nonce
 
-Potensi Kelemahan:
-- Rentan sama serangan offline (kalo passwordnya lemah)
-- Rentan sama KRACK attack (Key Reinstallation Attack) kalo firmwarenya kaga diupdate
-- Deauth attack buat dapetin handshake
+**Kelemahan:**
+- Rawan sama offline attack (kalo passwordnya gampang ditebak)
+- Rawan sama deauth attack (kalo kaga ngaktifin PMF)
+- Rawan sama KRACK attack (kalo firmwarenya kaga diupdate)
 
-## Intinya
-4-Way Handshake itu proses yang paling penting buat keamanan Wi-Fi. 
+## Kesimpulan
+Intinya, 4-Way Handshake itu proses yang paling penting buat keamanan Wi-Fi. 
 
 Proses ini buat mastiin:
 1. Client punya password yang bener
-2. Komunikasi keenkripsi pake kunci yang unik
-3. Data kaga bisa diubah atau direplay sama penyerang
+2. Komunikasi keenkripsi pake kunci yang unik (beda-beda)
+3. Data kaga bisa disadap atau dimodifikasi
