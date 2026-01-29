@@ -109,7 +109,7 @@ Keterangan:
 PTK dibagi jadi beberapa kunci:
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Handshake%20%26%20Proses%20Koneksi%20Wi-Fi/img/pmk.png" width="50%"/>
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/4-Way%20Handshake/img/pmk.png" width="50%"/>
 </div>
 
 1. **KCK (Key Confirmation Key)**
