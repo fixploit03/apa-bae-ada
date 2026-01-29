@@ -101,7 +101,29 @@ Ini autentikasi generasi paling baru sama yang paling aman.
   - Masih jarang perangkat yang ngedukung WPA3
   - Kompatibilitasnya kebates (banyak perangkat lama pada kaga bisa connect)
   - Ada bug di sebagian perangkat generasi awal
-  
+
+### 6. WPA3 Open (OWE)
+Ini autentikasi yang kaga make password tapi aman.
+
+- **Autentikasi:** langsung konek
+- **Handshake:** Diffie-Hellman (DH)
+- **Keunggulan:**
+  - Traffic tetep aman (keenkripsi) bagen kaga make password
+  - Kaga bisa di sadap kaya yang open biasa
+- **Kekurangan:**
+  - Kaga ada perlindungan dari Evil Twin attack
+  - Masih jarang perangkat yang support OWE
+
+## Tabel Perbandingan Autentikasi Wi-Fi
+| Jenis Autentikasi	| Autentikasi	| Handshake	| Status |
+|:--:|:--:|:--:|:--:|
+| Open | Langsung konek	| Kaga make	 | Paling kaga aman |
+| WEP	| Shared Key/Open System | Kaga make	| Kaga aman |
+| WPA/WPA2-PSK | Password (PSK)	| 4-Way Handshake | Lumayan aman |
+| WPA/WPA2-Enterprise	| EAP (802.1X) | 4-Way Handshake | Aman |
+| WPA3-Personal (SAE)	| SAE (Dragonfly) | Dragonfly Handshake	 | Paling aman |
+| WPA3 Open (OWE)	| Langsung konek | Diffie-Hellman (DH) | Lumayan aman |
+
 ## Peran Autentikasi Wi-Fi di Wireless Hacking
 Di wireless hacking, autentikasi itu jadi target utama.
 
