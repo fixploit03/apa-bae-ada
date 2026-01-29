@@ -3,7 +3,7 @@ Di materi ini, gw bakal ngebahas tentang frekuensi, channel sama bandwidth.
 # Frekuensi, Channel & Bandwidth
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Frekuensi%20%26%20Channel/img/frekuensi.png" width="50%"/>
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Frekuensi%2C%20Channel%20%26%20Bandwidth/img/frekuensi.png" width="50%"/>
 </div>
 
 ## 1. Apa Itu Frekuensi?
