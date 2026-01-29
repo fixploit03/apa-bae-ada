@@ -1,11 +1,19 @@
 # 4-Way Handshake
 
+<div align="center">
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Handshake%20%26%20Proses%20Koneksi%20Wi-Fi/img/handshake.png" width="50%"/>
+</div>
+
 ## Apa Itu 4-Way Handshake?
-4-Way Handshake adalah proses tuker-tukeran 4 paket (frame) antara client sama AP yang kejadi pas waktu client mau konek ke Wi-Fi WPA/WPA2/WPA3. Tujuannya buat ngecek kalo client punya password yang bener sama buat ngebikin kunci enkripsi buat ngamanin komunikasi antara client sama AP.
+4-Way Handshake adalah proses tuker-tukeran 4 paket (frame) antara client sama AP yang kejadi pas waktu client mau konek ke Wi-Fi WPA/WPA2.
+
+## Tujuan 4-Way Handshake
+- Buat ngecek kalo client punya password yang bener
+- Buat ngebikin kunci enkripsi buat ngamanin komunikasi antara client sama AP.
 
 ## Komponen-Komponen di 4-Way Handshake
 
-### 1. Passphrase (Password Wi-Fi)
+### 1. PSK (Password Wi-Fi)
 Ini bahan paling dasar buat ngitung PMK.
 
 > [!NOTE]
@@ -29,57 +37,48 @@ Makanya:
   <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Handshake%20%26%20Proses%20Koneksi%20Wi-Fi/img/pmk.png" width="50%"/>
 </div>
 
-PMK (Pairwise Master Key) adalah kunci utama yang jadi bahan dasar buat ngitung kunci-kunci turunan yang lain yang ada di jaringan Wi-Fi, khususnya di proses 4-Way Handshake.
+PMK (Pairwise Master Key) adalah kunci inti yang jadi bahan dasar buat ngitung kunci-kunci turunan yang lain.
 
-> [!NOTE]
-> - PMK kaga dipake buat ngenkripsi data, yang dipake buat ngenkripsi data itu kunci turunannya.
-> - Tiap jenis Wi-Fi cara bikinnya beda-beda.
-
-#### Cara Ngitung PMK Wi-Fi WPA/WPA2-PSK
-
-Rumus:
+#### Rumus Ngitung PMK Wi-Fi WPA/WPA2-PSK
 
 ```
 PMK = PBKDF2(HMAC−SHA1, PSK, SSID, 4096, 256)
 ```
 
 Keterangan:
-- PMK dihasilin dari password Wi-Fi (PSK) yang digabungin sama SSID
-- Terus diproses secara kriptografi pake:
-  - Fungsi: PBKDF2-HMAC-SHA1
-  - Password: PSK (Pre-Shared Key/password Wi-Fi)
-  - Salt: SSID (nama Wi-Fi)
-  - Iterasi: 4096 kali
-  - Output: 256 bit (32 byte)
+- `PBKDF2-HMAC-SHA1`: Fungsi kriptografi yang dipake
+- `PSK`: Password Wi-Fi
+- `SSID`: Nama Wi-Fi
+- `4096`: Jumlah iterasi (proses ngulang)
+- `256`: Hasil output (dalam bentuk bit)
 
-#### Cara Ngitung PMK Wi-Fi WPA/WPA2-Enterprise
-
-Rumus:
+#### Rumus Ngitung PMK Wi-Fi WPA/WPA2-Enterprise
 
 ```
 PMK = MSK[0..255 bit]
 ```
 
 Keterangan:
-- PMK dihasilin dari MSK (Master Session Key) yang didapet dari proses autentikasi EAP ke server RADIUS
-- PMK adalah 256 bit (32 byte) pertama dari MSK
-- MSK didapet dari hasil autentikasi EAP (EA-PEAP, EAP-TTLS, EAP-TLS, dll)
+- `MSK`: Master Session Key yang dihasilin dari proses autentikasi EAP (EAP-PEAP, EAP-TTLS- EAP-TLS)
+- `0..255 bit` : Hasil output PMK 256 bit pertama dari MSK
 
 > [!NOTE]
-> PMK kaga pernah dikirim di udara, cuma diitung di sisi AP sama client.
+> - PMK kaga dipake buat ngenkripsi data, yang dipake buat ngenkripsi data itu kunci turunannya.
+> - Tiap jenis Wi-Fi cara bikinnya beda-beda.
+> - PMK kaga pernah dikirim di udara, cuma diitung di sisi AP sama client.
 
 ### 4. Nonce
-Nonce adalah angka acak yang dipake di proses 4-Way Handshake buat ngebantu ngebentuk kunci enkripsi, biar tiap koneksi Wi-Fi hasilnya beda-beda sama kaga bisa direplay (dipake ulang).
+Nonce adalah angka acak yang dipake di proses 4-Way Handshake buat ngebantu ngebentuk kunci enkripsi yang lain.
 
-Di Wi-Fi ada dua macem Nonce:
-- ANonce (Authenticator Nonce): angka acak yang dibikin sama AP
-- SNonce (Station Nonce): angka acak yang dibikin sama client (STA)
+Di Wi-Fi ada dua macem jenis Nonce:
+- `ANonce`: Angka acak yang dibikin sama AP
+- `SNonce`: Angka acak yang dibikin sama client (STA)
 
 ### 5. PTK
-PTK (Pairwise Transient Key) adalah kunci sementara yang dipake buat ngamanin komunikasi unicast antara client sama AP di jaringan Wi-Fi. PTK ini dipake buat ngenkripsi data user abis proses 4-Way Handshake kelar.
+PTK (Pairwise Transient Key) adalah kunci turunan dari PMK yang dipake buat ngamanin komunikasi unicast antara client sama AP di jaringan Wi-Fi. 
 
 > [!NOTE]
-> Rumus buat ngitung PTK di Wi-Fi WPA/WPA2-PSK sama WPA/WPA2-Enterprise itu sama aja, yang beda cuma pas di cara ngitung PMK nya.
+> Rumus buat ngitung PTK di Wi-Fi WPA/WPA2-PSK sama WPA/WPA2-Enterprise itu sama aja, yang beda cuma pas di cara ngitung PMK nya aja.
 
 #### Cara Ngitung PTK
 
@@ -90,18 +89,14 @@ PTK = PRF(PMK, "Pairwise key expansion", Min(AP_MAC, Client_MAC) || Max(AP_MAC, 
 ```
 
 Keterangan:
-- Fungsi: PRF (Pseudo-Random Function)
-- Input:
-  - `PMK`: Pairwise Master Key
-  - `Label`: "Pairwise key expansion"
-  - `AP_MAC`: MAC address AP
-  - `Client_MAC`: MAC address client
-  - `ANonce`: Angka acak yang dikirim sama AP
-  - `SNonce`: Angka acak yang dikirim sama client
-- Output PTK:
-  - TKIP: 512 bit (64 byte)
-  - CCMP: 384 bit (48 byte)
-
+- `PRF (Pseudo-Random Function)`: Fungsi kriptografi yang dipake
+- `PMK`: Hasil ngitung PMK
+- `"Pairwise key expansion"`: Label yang dipake buat jadi bahan input fungsi PRF
+- `Min(AP_MAC, Client_MAC)`: MAC address AP yang nilainya lebih kecil dari MAC address client
+- `Max(AP_MAC, Client_MAC)`: MAC address client yang nilainya lebih gede dari MAC address AP
+- `Min(ANonce, SNonce)`: Nonce dari AP kalo kaga dari client yang nilainya lebih kecil
+- `Max(ANonce, SNonce)`: Nonce dari AP kalo kaga dari client yang nilainya lebih gede
+  
 #### Kunci Turunan PTK
 
 PTK dibagi jadi beberapa kunci:
@@ -111,26 +106,27 @@ PTK dibagi jadi beberapa kunci:
 </div>
 
 1. **KCK (Key Confirmation Key)**
-   - Ukuran Kunci: 128 bit (16 byte)
+   - Ukuran Kunci: 128 bit
    - Fungsi: buat ngitung MIC, ngecek data handshake masih asli apa kaga
 2. **KEK (Key Encryption Key)**
-   - Ukuran Kunci: 128 bit (16 byte)
+   - Ukuran Kunci: 128 bit
    - Fungsi: buat ngamanin GTK pas GTK dikirim dari AP ke client
 4. **TK (Temporal Key)**
-   - Ukuran Kunci:
-     - TKIP: 256-bit (32 byte)
-     - CCMP: 128-bit (16 byte)
+   - Ukuran Kunci: 128 bit
    - Fungsi: buat ngenkripsi data unicast antara client sama AP
+5. **MIC keys**
+   - Ukuran Kunci: 128 bit
+   - Fungsi: buat ngamanin paket data di TKIP
 
-**Total PTK:**
-- CCMP: 384-bit (48 byte) = KCK + KEK + TK
-- TKIP: 512-bit (64 byte) = KCK + KEK + TK + MIC keys
+#### Total Kunci PTK
+- **CCMP:** 384 bit = KCK + KEK + TK
+- **TKIP:** 512 bit = KCK + KEK + TK + MIC keys
 
 > [!NOTE]
 > PTK sifatnya unik per sesi sama dibikin ulang setiap kali client reconnect.
 
 ### 6. MIC 
-MIC (Message Integrity Check) adalah hasil ngitung kriptografi yang dipake buat ngecek data di proses 4-Way Handshake masih asli apa kaga, biar data yang dikirim kaga bisa diubah di tengah jalan.
+MIC (Message Integrity Check) adalah hasil ngitung proses kriptografi yang dipake buat ngecek data di proses 4-Way Handshake masih asli apa kaga, biar data yang dikirim kaga bisa diubah di tengah jalan.
 
 ### 7. GTK
 GTK (Group Temporal Key) adalah kunci yang dipake buat ngenkripsi traffic broadcast (data ke semua client) sama multicast (data ke beberapa client) di jaringan Wi-Fi, kaya ARP, DHCP, sama mDNS, yang dikirim dari AP ke banyak client sekaligus.
@@ -152,10 +148,6 @@ MIC   GTK  Enkripsi Data
 ```
 
 ## Tahapan 4-Way Handshake
-
-<div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Handshake%20%26%20Proses%20Koneksi%20Wi-Fi/img/handshake.png" width="50%"/>
-</div>
 
 ### 1. Message 1 (AP ke Client)
 
