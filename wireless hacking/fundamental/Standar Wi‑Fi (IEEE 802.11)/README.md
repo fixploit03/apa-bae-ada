@@ -1,4 +1,4 @@
-Di materi ini, gw bakal ngebahas tentang standar Wi-Fi (IEEE 802.11), mulai dari penjelasannya sampe jenis-jenisnya.
+Di materi ini, gw bakal ngebahas tentang standar Wi-Fi (IEEE 802.11).
 
 # Standar Wi‑Fi (IEEE 802.11)
 
