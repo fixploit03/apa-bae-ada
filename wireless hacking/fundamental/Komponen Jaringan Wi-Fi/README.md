@@ -1,6 +1,4 @@
-Di materi ini, gw bakal ngebahas tentang komponen jaringan di Wi-Fi, mulai dari penjelasannya, apa aja komponennya, sama kegunaannya buat apa di jaringan Wi-Fi.
-
-# Komponen Jaringan Wi-Fi
+Di materi ini, gw bakal ngebahas tentang komponen yang ada di jaringan di Wi-Fi.
 
 <div align="center">
   <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Komponen%20Jaringan%20Wi-Fi/img/1.webp" width="50%"/>
