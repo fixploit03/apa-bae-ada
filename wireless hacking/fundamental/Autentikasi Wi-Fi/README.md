@@ -1,4 +1,4 @@
-Di materi ini, gw bakal ngebahas tentang autentikasi Wi-Fi.
+Di materi ini, gw bakal ngebahas tentang jenis-jenis autentikasi yang ada di jaringan Wi-Fi.
 
 # Autentikasi Wi-Fi
 
