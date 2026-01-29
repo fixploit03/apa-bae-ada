@@ -1,4 +1,4 @@
-Di materi ini, gw bakal ngebahas tentang istilah‑istilah umum yang ada di Wi‑Fi.
+Di materi ini, gw bakal ngebahas tentang istilah‑istilah umum yang ada di jaringan Wi‑Fi.
 
 # Istilah‑Istilah Umum yang Ada di Wi‑Fi
 
