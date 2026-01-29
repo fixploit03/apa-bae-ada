@@ -1,4 +1,4 @@
-Di materi ini, gw bakal ngebahas tentang standar Wi-Fi (IEEE 802.11).
+Di materi ini, gw bakal ngebahas tentang standar-standar yang ada di Wi-Fi (IEEE 802.11).
 
 # Standar Wi‑Fi (IEEE 802.11)
 
