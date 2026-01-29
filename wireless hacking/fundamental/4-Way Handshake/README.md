@@ -1,4 +1,4 @@
-Di materi ini, gw bakal ngebahas tentang 4-Way Handshake.
+Di materi ini, gw bakal ngebahas tentang proses 4-Way Handshake yang ada di jaringan Wi-Fi.
 
 # 4-Way Handshake
 
