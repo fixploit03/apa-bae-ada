@@ -1,27 +1,27 @@
-Di materi ini, gw bakal ngebahas tentang frekuensi sama channel, mulai dari penjelasannya sampe jenis-jenisnya.
+Di materi ini, gw bakal ngebahas tentang frekuensi, channel sama bandwidth.
 
-# Frekuensi & Channel
+# Frekuensi, Channel & Bandwidth
 
 <div align="center">
   <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Frekuensi%20%26%20Channel/img/frekuensi.png" width="50%"/>
 </div>
 
 ## 1. Apa Itu Frekuensi?
-Frekuensi adalah jalan gelombang radio yang dipake sama Wi-Fi buat ngirim sekaligus nerima data lewat udara. Di Wi-Fi biasanya ada frekuensi 2.4 GHz, 5 GHz, sama 6 GHz, tiap frekuensi punya karakternya masing-masing, mulai dari jangkauan sinyalnya, speednya, sampe seberapa tahan dia sama interferensi (gangguan).
+Frekuensi adalah jalan yang bentukannya gelombang radio yang dipake sama Wi-Fi buat ngirim sekaligus nerima data lewat udara. Di Wi-Fi biasanya ada frekuensi 2.4 GHz, 5 GHz, sama 6 GHz, tiap frekuensi punya karakternya masing-masing, mulai dari jangkauan sinyalnya, speednya, sampe seberapa tahan dia sama interferensi (gangguan).
 
 ### Jenis-Jenis Frekuensi yang Dipake Wi-Fi
 - **2.4 GHz**
   - **Kelebihan:** Sinyalnya jauh, tembok masih bisa ditembus
   - **Kekurangan:** Rame, banyak yang make, gangguan di mana-mana (kaya Bluetooth, microwave, Wi-Fi tetangga)
-  - **Dipake:** Wi-Fi 4
+  - **Dipake:** `802.11b/g/n/ax`
 - **5 GHz**
   - **Kelebihan:** Kenceng, sinyalnya lebih bersih, jarang kena gangguan
   - **Kekurangan:** Sinyalnya kaga jauh, susah buat nembus tembok
-  - **Dipake:** Wi-Fi 5
+  - **Dipake:** `802.11a/n/ac/ax`
 - **6 GHz**
   - **Kelebihan:** Sipaling kenceng, masih sepi (belon banyak yang make), channelnya lebar
   - **Kekurangan:** Barangnya masih dikit, jaraknya paling pendek
-  - **Dipake:** Wi-Fi 6E
+  - **Dipake:** `802.11ax` (Wi-Fi 6E)
 
 ## 2. Apa Itu Channel
 Channel adalah jalan kecil di dalem satu frekuensi yang dipake buat misahin sinyal antar Wi-Fi biar kaga pada saling tubrukan, tiap channel punya nomornya masing-masing.
@@ -98,8 +98,46 @@ Channel adalah jalan kecil di dalem satu frekuensi yang dipake buat misahin siny
 > [!NOTE]
 > Channel DFS (dari channel 52-140) kadang suka dipake sama radar cuaca kalo kaga sama radar militer. Jadi kalo router lu ngedeteksi ada radar, dia bakal otomatis ngalah sama pindah channel ke channel yang lain (kaya channel 36–48).
 
+## 3. Apa Itu Bandwidth?
+
+Bandwidth adalah lebar jalan yang dipake sama Wi-Fi buat ngirim data.
+
+### Jenis-Jenis Bandwidth yang Dipake Wi-Fi
+- **20 MHz**
+  - Bandwidth yang paling sempit
+  - Paling stabil sama jangkauannya yang paling jauh
+  - Cocok buat Wi-Fi yang banyak perangkatnya
+- **40 MHz**
+  - Gabungan dua channel 20 MHz
+  - Lebih kenceng dari yang 20 MHz
+  - Rawan kena interferensi (kalo banyak perangkat)
+- **80 MHz**
+  - Dipake di Wi-Fi 5 ke atas
+  - Jauh lebih kenceng
+  - Jangkauannya kaga jauh
+- **160 MHz:**
+  - Bandwidth yang paling gede
+  - Sipaling kenceng
+  - Paling jarang dipake soalnya:
+    - Susah buat dapet channel yang bersih
+    - Interferensi dimana-mana
+    - Kaga semua perangkat support sama 160 MHz
+
+## Tabel Bandwidth yang Dipake Wi-Fi
+
+| Bandwidth	| Frekuensi | Dipake di Wi‑Fi |
+|:--:|:--:|:--:|
+| 20 MHz | 2.4/5/6 GHz | Wi‑Fi 4/5/6/6E |
+| 40 MHz | 2.4/5/6 GHz | Wi‑Fi 4/5/6/6E |
+| 80 MHz | 5/6 GHz | Wi‑Fi 5/6/6E |
+| 160 MHz | 5/6 GHz	| Wi‑Fi 5/6/6E | 
+
+> [!NOTE]
+> Di frekuensi 2.4 GHz, bandwidth 40 MHz jarang dipake soalnya channelnya rawan pada tubrukan.
+
 ## Kesimpulan
 
 Intinya:
-- Frekuensi: jalan
-- Channel: nomer jalan
+- Frekuensi: jalan tol
+- Channel: nomer jalan tol
+- Bandwidth: lebar jalan tol
