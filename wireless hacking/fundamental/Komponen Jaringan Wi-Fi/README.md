@@ -1,5 +1,7 @@
 Di materi ini, gw bakal ngebahas tentang komponen yang ada di jaringan di Wi-Fi.
 
+# Komponen Jaringan Wi-Fi
+
 <div align="center">
   <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Komponen%20Jaringan%20Wi-Fi/img/1.webp" width="50%"/>
   <h2 align="left">Apa Itu Komponen Jaringan Wi-Fi?</h2>
