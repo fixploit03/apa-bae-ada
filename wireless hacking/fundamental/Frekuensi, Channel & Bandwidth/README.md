@@ -1,4 +1,4 @@
-Di materi ini, gw bakal ngebahas tentang frekuensi, channel sama bandwidth.
+Di materi ini, gw bakal ngebahas tentang frekuensi, channel sama bandwidth yang dipake di jaringan Wi-Fi.
 
 # Frekuensi, Channel & Bandwidth
 
