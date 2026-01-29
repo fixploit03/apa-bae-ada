@@ -176,7 +176,7 @@ MIC   GTK  Enkripsi Data
 ### 1. Message 1 (AP ke Client)
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Handshake%20%26%20Proses%20Koneksi%20Wi-Fi/img/m1.png" width="50%"/>
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/4-Way%20Handshake/img/m1.png" width="50%"/>
 </div>
 
 Di tahap awal ini AP:
@@ -189,7 +189,7 @@ Di tahap awal ini AP:
 ### 2. Message 2 (Client ke AP)
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Handshake%20%26%20Proses%20Koneksi%20Wi-Fi/img/m2.png" width="50%"/>
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/4-Way%20Handshake/img/m2.png" width="50%"/>
 </div>
 
 Client nerima ANonce dari AP, terus dia:
@@ -204,7 +204,7 @@ Client nerima ANonce dari AP, terus dia:
 ### 3. Message 3 (AP ke Client)
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Handshake%20%26%20Proses%20Koneksi%20Wi-Fi/img/m3.png" width="50%"/>
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/4-Way%20Handshake/img/m3.png" width="50%"/>
 </div>
 
 AP nerima SNonce dari client, terus dia:
@@ -224,7 +224,7 @@ Kalo MIC nya bener:
 ### 4. Message 4 (Client ke AP)
 
 <div align="center">
-  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/Handshake%20%26%20Proses%20Koneksi%20Wi-Fi/img/m4.png" width="50%"/>
+  <img src="https://github.com/fixploit03/apa-bae-ada/blob/main/wireless%20hacking/fundamental/4-Way%20Handshake/img/m4.png" width="50%"/>
 </div>
 
 Abis itu client:
